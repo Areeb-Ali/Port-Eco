@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beera Lia | Trading Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Add this to your HTML head -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="mainNav">
+    <div class="logo">
+      <h1>Beera<span>Lia</span></h1>
+      <p>Trader & Macro Analyst</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#trades">Trade Setups</a></li>
+      <li><a href="#economics">Economics</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- Mobile Navigation Toggle -->
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="social">
+      <a href="https://x.com/areebithink" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Add this right after the <nav> and before the Trade Setups section -->
+  <section id="home" class="section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Professional Trading Insights</h1>
+        <p class="tagline">Quantitative analysis meets macroeconomic strategy</p>
+        <div class="performance-metrics">
+          <div class="metric-card">
+            <i class="fas fa-chart-line"></i>
+            <div>
+              <h3>89% Win Rate</h3>
+              <p>Last 90 Days</p>
+            </div>
+          </div>
+          <div class="metric-card">
+            <i class="fas fa-coins"></i>
+            <div>
+              <h3>1:2 Risk/Reward</h3>
+              <p>Average Ratio</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <a href="#trades" class="btn">View Live Trades</a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+      <div class="chart-container">
+        <!-- TradingView Chart Widget -->
+        <div class="tradingview-widget-container">
+          <div id="tradingview-chart" class="chart-animation"></div>
+          <!-- Update the TradingView widget script -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trade Setups Section -->
+  <section id="trades" class="section">
+    <h2>Recent Trade Setups</h2>
+    <div class="trade-grid" id="tradeLogs">
+      <!-- Loaded from JavaScript -->
+    </div>
+    <a href="/trade-history.html" class="btn">View Full Trade History</a>
+  </section>
+
+  <!-- Economics Blog -->
+  <section id="economics" class="section">
+    <h2>Economics & Market Analysis</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>Fed Rate Impact on Forex</h3>
+        <p>Analysis of how recent Fed decisions influence USD pairs.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog-card">
+        <h3>Bitcoin Halving 2024</h3>
+        <p>Historical trends and future price projections.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>My Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Account Management</h3>
+        <p>Let me trade your capital with a personalized risk plan.</p>
+        <a href="#contact" class="btn">Inquire Now</a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-copy"></i>
+        <h3>Copy Trading</h3>
+        <p>Copy my trades directly into your account automatically.</p>
+        <a href="#contact" class="btn">Learn More</a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>1-on-1 Mentorship</h3>
+        <p>Personal guidance tailored to improve your trading.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="/1st.jfif" alt="Beera Lia" />
+      <div>
+        <h3>Trader | Analyst | Educator</h3>
+        <p>
+          I trade US stocks, commodities, and crypto using both technical
+          setups and macroeconomic fundamentals.
+        </p>
+        <p>Track record available upon request.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="service">
+        <option value="">Select Service</option>
+        <option value="Account Management">Account Management</option>
+        <option value="Copy Trading">Copy Trading</option>
+        <option value="Mentorship">Mentorship</option>
+      </select>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Beera Lia. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="#">Partnership</a>
+      <a href="https://x.com/areebithink" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</body>
+
+</html>

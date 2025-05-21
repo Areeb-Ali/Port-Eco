@@ -1,0 +1,50 @@
+/* Additional styles specific to disclaimer page, if any, can go here */
+/* Or add to styles.css if preferred and more broadly applicable */
+#disclaimer-content {
+    padding-top: 100px;
+    /* Adjust based on your navbar height to prevent overlap */
+    padding-bottom: 3rem;
+    min-height: calc(100vh - 180px);
+    /* Adjust to ensure footer is pushed down */
+}
+
+#disclaimer-content h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+#disclaimer-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+#disclaimer-content ul {
+    margin-bottom: 1rem;
+    margin-left: 20px;
+}
+
+#disclaimer-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Ensure .section styles apply if not already generic enough */
+.section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Adjusting main content padding for fixed navbar */
+body>.section {
+    padding-top: 120px;
+    /* Navbar height + some space */
+}
+
+@media (max-width: 768px) {
+    body>.section {
+        padding-top: 90px;
+        /* Adjust for mobile if navbar height changes */
+    }
+}
