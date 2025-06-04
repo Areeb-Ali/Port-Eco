@@ -84,18 +84,54 @@ document.addEventListener('DOMContentLoaded', function () {
         desc: "Entry at 0.08 | TP: 0.1115 | SL: 0.06789",
         date: "2024-05-14",
         outcome: "win"
-      // },
-      // {
-      //   title: "Gold Short",
-      //   desc: "Entry at 2345 | TP: 2310 | SL: 2360",
-      //   date: "2024-05-08",
-      //   outcome: "loss"
-      // },
-      // {
-      //   title: "NASDAQ100 Long",
-      //   desc: "Entry at 17,750 | TP: 17,950 | SL: 17,650",
-      //   date: "2024-05-05",
-      //   outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 103,055 | TP: 104,077 | SL: 00",
+        date: "2024-05-09",
+        outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 99,380 | TP: 100,422 | SL: 00",
+        date: "2024-05-08",
+        outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 96,448 | TP: 97,417 | SL: 00",
+        date: "2024-05-07",
+        outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 94,258 | TP: 95,210 | SL: 00",
+        date: "2024-05-05",
+        outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 96,856 | TP: 97,829 | SL: 00",
+        date: "2024-05-02",
+        outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 96,070 | TP: 97,096 | SL: 00",
+        date: "2024-05-01",
+        outcome: "win"
+      },
+      {
+        title: "BTCUSDT Long",
+        desc: "Entry at 94,276 | TP: 95,221 | SL: 00",
+        date: "2024-04-28",
+        outcome: "win"
+      },
+      {
+        title: "MANAUSDT Short",
+        desc: "Entry at 0.2773 | TP: 0.276 | SL: 00",
+        date: "2024-04-15",
+        outcome: "win"
       }
     ];
 
