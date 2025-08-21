@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1958157233235325301"
     },
     {
-      id: "REC-003",
+      id: "REC-004",
       title: "SOLUSDT Short",
       symbol: "SOLUSDT",
       entry: 183.82, tp: 180.2, sl: 186.98,
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1958240753899159684"
     },
     {
-      id: "REC-004",
+      id: "REC-005",
       title: "FETUSDT Short",
       symbol: "FETUSDT",
       entry: 0.6859, tp: 0.6706, sl: 0.6899,
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1958312286512435214"
     },
     {
-      id: "REC-005",
+      id: "REC-006",
       title: "BTCUSDT Short",
       symbol: "BTCUSDT",
       entry: 114430, tp: 113658.8, sl: 114750,
@@ -149,7 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
     data.forEach(t => container.appendChild(createTradeCard(t)));
   }
   renderTrades(runningTrades, runningGrid);
-  renderTrades(recentTrades, tradeGrid);
+
+  // Show only last 6 trades on homepage
+  const lastSixTrades = recentTrades.slice(-6).reverse();
+  renderTrades(lastSixTrades, tradeGrid);
+
 
   // ===== Performance Stats =====
   function calculateWinRate(trades) {
