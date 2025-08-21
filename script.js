@@ -13,18 +13,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "ETHUSDT Long",
-    //   symbol: "ETHUSDT",
-    //   entry: 2500, tp: 2650, sl: 2420,
-    //   date: "2025-08-15", outcome: "running",
-    //   proof: "https://x.com/sample_running_trade"
-    // },
-    // {
-    //   id: "RUN-002", title: "SOLUSDT Short", symbol: "SOLUSDT",
-    //   entry: 80.5, tp: 74.2, sl: 83.0, date: "2025-08-20",
-    //   outcome: "running", proof: "https://x.com/sample_running_sol"
-    // }
+    {
+      id: "RUN-001", title: "BTCUSDT Long",
+      symbol: "BTCUSDT",
+      entry: 112156, tp: 113761, sl: 00,
+      date: "2025-08-22", outcome: "running",
+      proof: "https://x.com/areebithink/status/1958622382022885496"
+    },
+    {
+      id: "RUN-002", title: "ETHUSDT Long",
+      symbol: "ETHUSDT",
+      entry: 4226.16, tp: 4341.29, sl: 0.0, date: "2025-08-22",
+      outcome: "running", proof: "https://x.com/areebithink/status/1958622450591440964"
+    },
+    {
+      id: "RUN-003", title: "BBUSDT Long", symbol: "BBUSDT",
+      entry: 0.125262, tp: 0.13284, sl: 0.0, date: "2025-08-22",
+      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    },
+    {
+      id: "RUN-004", title: "ENSUSDT Long", symbol: "ENSUSDT",
+      entry: 24.453, tp: 25.234, sl: 0.0, date: "2025-08-22",
+      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    },
+    {
+      id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
+      entry: 0.6682, tp: 0.6827, sl: 0.0, date: "2025-08-22",
+      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    },
+    {
+      id: "RUN-002", title: "PLUMEUSDT Long", symbol: "PLUMEUSDT",
+      entry: 0.08387, tp: 0.08899, sl: 0.07972, date: "2025-08-22",
+      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    }
   ];
   const recentTrades = [
     {
