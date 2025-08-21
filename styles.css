@@ -532,3 +532,22 @@ body.dark .date-group input[type="date"]::-webkit-calendar-picker-indicator {
     grid-template-columns: 1fr; /* single column on small screens */
   }
 }
+
+/* Fix big gap between ticker and hero section on mobile */
+@media (max-width: 768px) {
+  #home {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important; /* reduce space */
+  }
+
+  .hero-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: calc(var(--nav-height) + var(--ticker-height) - 15px) !important;
+  }
+}
