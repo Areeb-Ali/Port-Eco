@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trade History | Beera Lia</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
   <nav id="mainNav">
-    <div class="logo"><h1>Beera<span>Lia</span></h1><p>Trader & Macro Analyst</p></div>
+    <div class="logo">
+      <h1>Beera<span>Lia</span></h1>
+      <p>Trader & Macro Analyst</p>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html#home">Home</a></li>
       <li><a href="index.html#running-trades">Running Trades</a></li>
       <li><a href="index.html#trades">Recent Trades</a></li>
       <li><a href="index.html#economics">Economics</a></li>
+      <li><a href="index.html#services">Economics</a></li>
+      <li><a href="index.html#about">Economics</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <div class="nav-right"><div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div></div>
+    <div class="nav-right">
+      <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+    </div>
     <div class="theme-toggle"><i class="fas fa-moon"></i></div>
     <div class="social"><a href="https://x.com/areebithink" target="_blank"><i class="fab fa-twitter"></i></a></div>
   </nav>
 
-  <div id="tickerWrap"><div id="ticker-tape" class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div></div>
+  <div id="tickerWrap">
+    <div id="ticker-tape" class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+    </div>
+  </div>
 
   <section class="section">
     <h2>Full Trade History</h2>
@@ -45,7 +58,9 @@
     <div id="historyTable" class="trade-grid"></div>
   </section>
 
-  <footer><p style="text-align:center;">Back to <a href="index.html">Home</a></p></footer>
+  <footer>
+    <p style="text-align:center;">Back to <a href="index.html">Home</a></p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="https://s3.tradingview.com/tv.js"></script>
@@ -70,4 +85,5 @@
     }, 150);
   </script>
 </body>
+
 </html>

@@ -533,11 +533,29 @@ body.dark .date-group input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-/* Fix big gap between ticker and hero section on mobile */
+/* Ensure ticker fully visible on tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  #tickerWrap {
+    height: 48px !important;
+  }
+
+  #tickerWrap iframe {
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+  }
+
+  body {
+    padding-top: calc(var(--nav-height) + 48px) !important;
+  }
+}
+
+
+/* Fix big gap between ticker and hero section on mobile
 @media (max-width: 768px) {
   #home {
     margin-top: 0 !important;
-    padding-top: 0.5rem !important; /* reduce space */
+    padding-top: 0.5rem !important; reduce space
   }
 
   .hero-container {
@@ -552,20 +570,20 @@ body.dark .date-group input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-/* Reduce gap between ticker and hero section on mobile screens */
+Reduce gap between ticker and hero section on mobile screens
 @media (max-width: 768px) {
   body {
-    /* Slightly reduce total padding to bring content up */
+    Slightly reduce total padding to bring content up
     padding-top: calc(var(--nav-height) + var(--ticker-height) - 10px) !important;
   }
 
   #home {
-    /* Remove extra top padding */
+    Remove extra top padding
     padding-top: 0.5rem !important;
   }
 
   .hero-container {
-    /* Reset any margins to eliminate hidden gap */
+    Reset any margins to eliminate hidden gap
     margin-top: 0 !important;
   }
-}
+} */
