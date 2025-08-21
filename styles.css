@@ -569,27 +569,3 @@ body.dark .date-group input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 0 !important;
   }
 }
-
-/* Force ticker tape height on mobile to remove huge gap */
-@media (max-width: 768px) {
-  #tickerWrap {
-    height: 36px !important;
-    overflow: hidden;
-  }
-
-  #tickerWrap iframe {
-    height: 36px !important;
-    min-height: 36px !important;
-    max-height: 36px !important;
-    display: block;
-  }
-
-  body {
-    padding-top: calc(var(--nav-height) + 36px) !important;
-  }
-
-  #home {
-    margin-top: 0 !important;
-    padding-top: 0.8rem !important;
-  }
-}
