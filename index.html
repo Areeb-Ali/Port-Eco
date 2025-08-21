@@ -21,6 +21,7 @@
     </div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
+      <li><a href="#running-trades">Running Trades</a></li>
       <li><a href="#trades">Trade Setups</a></li>
       <li><a href="#economics">Economics</a></li>
       <li><a href="#services">Services</a></li>
@@ -37,11 +38,19 @@
       <i class="fas fa-moon"></i>
     </div>
     <div class="social">
-      <a href="https://x.com/areebithink" target="_blank">
+      <a href="https://x.com/areebithink" target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </div>
   </nav>
+
+  <!-- TradingView Ticker Tape - fixed under nav -->
+  <div id="tickerWrap">
+    <div id="ticker-tape" class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <!-- The script for the widget will be injected by script.js to sync theme -->
+    </div>
+  </div>
 
   <!-- Add this right after the <nav> and before the Trade Setups section -->
   <section id="home" class="section">
@@ -50,17 +59,18 @@
         <h1>Professional Trading Insights</h1>
         <p class="tagline">Quantitative analysis meets macroeconomic strategy</p>
         <div class="performance-metrics">
+          <!-- These metric cards will be dynamically replaced by script.js with live values -->
           <div class="metric-card">
             <i class="fas fa-chart-line"></i>
             <div>
-              <h3>89% Win Rate</h3>
-              <p>Last 90 Days</p>
+              <h3 class="winrate-text">--% Win Rate</h3>
+              <p class="winrate-sub">Last X Trades</p>
             </div>
           </div>
           <div class="metric-card">
             <i class="fas fa-coins"></i>
             <div>
-              <h3>1:2 Risk/Reward</h3>
+              <h3 class="rr-text">-- : --</h3>
               <p>Average Ratio</p>
             </div>
           </div>
@@ -74,9 +84,17 @@
         <!-- TradingView Chart Widget -->
         <div class="tradingview-widget-container">
           <div id="tradingview-chart" class="chart-animation"></div>
-          <!-- Update the TradingView widget script -->
+          <!-- TradingView chart initialization optional (kept commented, can be enabled later) -->
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Running Trade Setups Section -->
+  <section id="running-trades" class="section">
+    <h2>Running Trade Setups</h2>
+    <div class="trade-grid" id="runningTradeLogs">
+      <!-- Loaded from JavaScript -->
     </div>
   </section>
 
@@ -86,7 +104,7 @@
     <div class="trade-grid" id="tradeLogs">
       <!-- Loaded from JavaScript -->
     </div>
-    <a href="https://x.com/areebithink" target="_blank" class="btn">View Full Trade History</a>
+    <a href="tradehistory.html" class="btn">View Full Trade History</a>
   </section>
 
   <!-- Economics Blog -->
@@ -96,12 +114,12 @@
       <div class="blog-card">
         <h3>Fed Rate Impact on Stock and Crypto</h3>
         <p>Analysis of how recent Fed decisions influence the market.</p>
-        <a href="#">Read More</a>
+        <a href="https://x.com/sample_fed_post" target="_blank" rel="noopener">Read More</a>
       </div>
       <div class="blog-card">
         <h3>Bitcoin Halving 2024</h3>
         <p>Historical trends and future price projections.</p>
-        <a href="#">Read More</a>
+        <a href="https://x.com/sample_halving_post" target="_blank" rel="noopener">Read More</a>
       </div>
     </div>
   </section>
@@ -140,10 +158,9 @@
         <h3>Trader | Analyst | Educator</h3>
         <p>
           I trade US stocks, commodities, and crypto enthusiast, sharing real-time market
-          insights and strategies on Twitter (@areebithink). Known for debunking weak advice, Empowers investors
+          insights and strategies on Twitter (@areebithink). Known for debunking weak advice, I empower investors
           with disciplined, transparent trading approaches and a knack for navigating volatile markets.
         </p>
-        <!-- <p>Track record available upon request.</p> -->
       </div>
     </div>
   </section>
@@ -171,13 +188,13 @@
     <div class="footer-links">
       <a href="/disclaimer.html">Disclaimer</a>
       <a href="#">Partnership</a>
-      <a href="https://x.com/areebithink" target="_blank">Twitter</a>
+      <a href="https://x.com/areebithink" target="_blank" rel="noopener">Twitter</a>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://s3.tradingview.com/tv.js"></script>
   <script src="script.js"></script>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 </body>
 
 </html>
