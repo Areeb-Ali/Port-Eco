@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: "RUN-001", title: "BTCUSDT Long",
       symbol: "BTCUSDT",
-      entry: 112156, tp: 113761, sl: 00,
+      entry: 112156, tp: 113761, sl: 0.0,
       date: "2025-08-22", outcome: "running",
       proof: "https://x.com/areebithink/status/1958622382022885496"
     },
