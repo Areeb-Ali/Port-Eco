@@ -551,3 +551,21 @@ body.dark .date-group input[type="date"]::-webkit-calendar-picker-indicator {
     padding-top: calc(var(--nav-height) + var(--ticker-height) - 15px) !important;
   }
 }
+
+/* Reduce gap between ticker and hero section on mobile screens */
+@media (max-width: 768px) {
+  body {
+    /* Slightly reduce total padding to bring content up */
+    padding-top: calc(var(--nav-height) + var(--ticker-height) - 10px) !important;
+  }
+
+  #home {
+    /* Remove extra top padding */
+    padding-top: 0.5rem !important;
+  }
+
+  .hero-container {
+    /* Reset any margins to eliminate hidden gap */
+    margin-top: 0 !important;
+  }
+}
