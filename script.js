@@ -13,36 +13,72 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "ETHUSDT Long",
-      symbol: "ETHUSDT",
-      entry: 2500, tp: 2650, sl: 2420,
-      date: "2025-08-15", outcome: "running",
-      proof: "https://x.com/sample_running_trade"
-    },
-    {
-      id: "RUN-002", title: "SOLUSDT Short", symbol: "SOLUSDT",
-      entry: 80.5, tp: 74.2, sl: 83.0, date: "2025-08-20",
-      outcome: "running", proof: "https://x.com/sample_running_sol"
-    }
+    // {
+    //   id: "RUN-001", title: "ETHUSDT Long",
+    //   symbol: "ETHUSDT",
+    //   entry: 2500, tp: 2650, sl: 2420,
+    //   date: "2025-08-15", outcome: "running",
+    //   proof: "https://x.com/sample_running_trade"
+    // },
+    // {
+    //   id: "RUN-002", title: "SOLUSDT Short", symbol: "SOLUSDT",
+    //   entry: 80.5, tp: 74.2, sl: 83.0, date: "2025-08-20",
+    //   outcome: "running", proof: "https://x.com/sample_running_sol"
+    // }
   ];
   const recentTrades = [
     {
-      id: "T-20240514",
-      title: "PRAIUSDT Long",
-      symbol: "PRAIUSDT",
-      entry: 0.08, tp: 0.1115, sl: 0.06789,
-      date: "2024-05-14", outcome: "win",
-      proof: "https://x.com/sample_prai"
+      id: "REC-001",
+      title: "BTCUSDT Short",
+      symbol: "BTCUSDT",
+      entry: 113845, tp: 112365.4, sl: 114166,
+      date: "2025-08-20", outcome: "win",
+      proof: "https://x.com/areebithink/status/1957904824881844492"
     },
     {
-      id: "T-20240509",
-      title: "BTCUSDT Long",
-      symbol: "BTCUSDT",
-      entry: 103055, tp: 104077, sl: 102500,
-      date: "2024-05-09",
+      id: "REC-002",
+      title: "ETHUSDT Short",
+      symbol: "ETHUSDT",
+      entry: 4200.05, tp: 4117, sl: 4229.47,
+      date: "2025-08-20",
       outcome: "win",
-      proof: "https://x.com/sample_btc_0509"
+      proof: "https://x.com/areebithink/status/1958153116358246578"
+    },
+    {
+      id: "REC-003",
+      title: "ADAUSDT Short",
+      symbol: "ADAUSDT",
+      entry: 0.8562, tp: 0.8391, sl: 0.8662,
+      date: "2025-08-20",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958157233235325301"
+    },
+    {
+      id: "REC-003",
+      title: "SOLUSDT Short",
+      symbol: "SOLUSDT",
+      entry: 183.82, tp: 180.2, sl: 186.98,
+      date: "2025-08-20",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1958240753899159684"
+    },
+    {
+      id: "REC-004",
+      title: "FETUSDT Short",
+      symbol: "FETUSDT",
+      entry: 0.6859, tp: 0.6706, sl: 0.6899,
+      date: "2025-08-21",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958312286512435214"
+    },
+    {
+      id: "REC-005",
+      title: "BTCUSDT Short",
+      symbol: "BTCUSDT",
+      entry: 114430, tp: 113658.8, sl: 114750,
+      date: "2025-08-21",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1957904824881844492"
     }
   ];
 
