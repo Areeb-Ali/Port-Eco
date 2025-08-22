@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "BTCUSDT Long",
-      symbol: "BTCUSDT",
-      entry: 112156, tp: 113761, sl: 0.0,
-      date: "2025-08-22", outcome: "running",
-      proof: "https://x.com/areebithink/status/1958622382022885496"
-    },
+    // {
+    //   id: "RUN-001", title: "BTCUSDT Long",
+    //   symbol: "BTCUSDT",
+    //   entry: 112156, tp: 113761, sl: 0.0,
+    //   date: "2025-08-22", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1958622382022885496"
+    // },
     // {
     //   id: "RUN-002", title: "ETHUSDT Long",
     //   symbol: "ETHUSDT",
@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
     //   entry: 0.125262, tp: 0.13284, sl: 0.0, date: "2025-08-22",
     //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
     // },
-    {
-      id: "RUN-004", title: "ENSUSDT Long", symbol: "ENSUSDT",
-      entry: 24.453, tp: 25.234, sl: 0.0, date: "2025-08-22",
-      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
-    },
+    // {
+    //   id: "RUN-004", title: "ENSUSDT Long", symbol: "ENSUSDT",
+    //   entry: 24.453, tp: 25.234, sl: 0.0, date: "2025-08-22",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    // },
     // {
     //   id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
     //   entry: 0.6682, tp: 0.6827, sl: 0.6482, date: "2025-08-22",
@@ -135,6 +135,24 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 0.6682, tp: 0.6827, sl: 0.6482,
       date: "2025-08-22",
       outcome: "loss",
+      proof: "https://x.com/areebithink/status/1958622846210785384"
+    },
+    {
+      id: "REC-011",
+      title: "BTCUSDT Long",
+      symbol: "BTCUSDT",
+      entry: 112156, tp: 113761, sl: 111400,
+      date: "2025-08-22",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958622382022885496"
+    },
+    {
+      id: "REC-012",
+      title: "ENSUSDT Long",
+      symbol: "ENSUSDT",
+      entry: 24.453, tp: 25.234, sl: 24.067,
+      date: "2025-08-22",
+      outcome: "win",
       proof: "https://x.com/areebithink/status/1958622846210785384"
     }
   ];
