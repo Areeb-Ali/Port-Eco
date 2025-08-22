@@ -20,17 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-22", outcome: "running",
       proof: "https://x.com/areebithink/status/1958622382022885496"
     },
-    {
-      id: "RUN-002", title: "ETHUSDT Long",
-      symbol: "ETHUSDT",
-      entry: 4226.16, tp: 4341.29, sl: 0.0, date: "2025-08-22",
-      outcome: "running", proof: "https://x.com/areebithink/status/1958622450591440964"
-    },
-    {
-      id: "RUN-003", title: "BBUSDT Long", symbol: "BBUSDT",
-      entry: 0.125262, tp: 0.13284, sl: 0.0, date: "2025-08-22",
-      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
-    },
+    // {
+    //   id: "RUN-002", title: "ETHUSDT Long",
+    //   symbol: "ETHUSDT",
+    //   entry: 4226.16, tp: 4341.29, sl: 0.0, date: "2025-08-22",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622450591440964"
+    // },
+    // {
+    //   id: "RUN-003", title: "BBUSDT Long", symbol: "BBUSDT",
+    //   entry: 0.125262, tp: 0.13284, sl: 0.0, date: "2025-08-22",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    // },
     {
       id: "RUN-004", title: "ENSUSDT Long", symbol: "ENSUSDT",
       entry: 24.453, tp: 25.234, sl: 0.0, date: "2025-08-22",
@@ -100,6 +100,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-21",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1957904824881844492"
+    },
+    {
+      id: "REC-007",
+      title: "BBUSDT Long",
+      symbol: "BBUSDT",
+      entry: 0.125262, tp: 0.13284, sl: 0.12126,
+      date: "2025-08-22",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958622846210785384"
+    },
+    {
+      id: "REC-008",
+      title: "ETHUSDT Long",
+      symbol: "ETHUSDT",
+      entry: 4226.16, tp: 4341.29, sl: 4176,
+      date: "2025-08-22",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958622450591440964"
     }
   ];
 
