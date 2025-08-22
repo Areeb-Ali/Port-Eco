@@ -492,6 +492,12 @@ body.dark .date-group input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
+/* Add this to your CSS file */
+.trade-outcome.breakeven {
+  background: rgba(180, 180, 0, 0.12);
+  color: #b4b400;
+}
+
 /* Force ticker full width on mobile */
 #ticker-tape iframe {
   width: 100% !important;

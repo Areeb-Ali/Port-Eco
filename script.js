@@ -36,16 +36,16 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 24.453, tp: 25.234, sl: 0.0, date: "2025-08-22",
       outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
     },
-    {
-      id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
-      entry: 0.6682, tp: 0.6827, sl: 0.0, date: "2025-08-22",
-      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
-    },
-    {
-      id: "RUN-002", title: "PLUMEUSDT Long", symbol: "PLUMEUSDT",
-      entry: 0.08387, tp: 0.08899, sl: 0.07972, date: "2025-08-22",
-      outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
-    }
+    // {
+    //   id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
+    //   entry: 0.6682, tp: 0.6827, sl: 0.6482, date: "2025-08-22",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    // },
+    // {
+    //   id: "RUN-002", title: "PLUMEUSDT Long", symbol: "PLUMEUSDT",
+    //   entry: 0.08387, tp: 0.08899, sl: 0.07972, date: "2025-08-22",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
+    // }
   ];
   const recentTrades = [
     {
@@ -118,6 +118,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-22",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1958622450591440964"
+    },
+    {
+      id: "REC-009",
+      title: "PLUMEUSDT Long",
+      symbol: "PLUMEUSDT",
+      entry: 0.08382, tp: 0.08382, sl: 0.08097,
+      date: "2025-08-22",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1958866435247329744"
+    },
+    {
+      id: "REC-010",
+      title: "FETUSDT Long",
+      symbol: "FETUSDT",
+      entry: 0.6682, tp: 0.6827, sl: 0.6482,
+      date: "2025-08-22",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1958622846210785384"
     }
   ];
 
@@ -165,21 +183,29 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // ===== Trade Card Renderer =====
+  // Find this function in your script.js
   function createTradeCard(trade) {
     const card = document.createElement("div");
     card.className = `trade-card ${trade.outcome || ''}`;
     const formatNum = (n) => (!n && n !== 0) ? '—' : (Math.abs(n) >= 1000 ? Number(n).toLocaleString() : n);
+
+    // Add breakeven class handling
+    let outcomeText = (trade.outcome || 'running').toUpperCase();
+    if (trade.outcome === 'breakeven') {
+      outcomeText = 'BREAKEVEN';
+    }
+
     card.innerHTML = `
-      <div class="trade-header">
-        <h3>${trade.title}</h3>
-        <span class="trade-date">${trade.date}</span>
-      </div>
-      <p>${trade.symbol} • Entry: ${formatNum(trade.entry)} | TP: ${formatNum(trade.tp)} | SL: ${formatNum(trade.sl)}</p>
-      <div style="display:flex;gap:.5rem;align-items:center;margin-top:.5rem;">
-        <div class="trade-outcome ${trade.outcome || ''}">${(trade.outcome || 'running').toUpperCase()}</div>
-        <a href="${trade.proof || '#'}" target="_blank" rel="noopener" class="btn btn-outline proof-btn">Proof</a>
-      </div>
-    `;
+    <div class="trade-header">
+      <h3>${trade.title}</h3>
+      <span class="trade-date">${trade.date}</span>
+    </div>
+    <p>${trade.symbol} • Entry: ${formatNum(trade.entry)} | TP: ${formatNum(trade.tp)} | SL: ${formatNum(trade.sl)}</p>
+    <div style="display:flex;gap:.5rem;align-items:center;margin-top:.5rem;">
+      <div class="trade-outcome ${trade.outcome || ''}">${outcomeText}</div>
+      <a href="${trade.proof || '#'}" target="_blank" rel="noopener" class="btn btn-outline proof-btn">Proof</a>
+    </div>
+  `;
     return card;
   }
   function renderTrades(data, container) {
@@ -254,16 +280,30 @@ document.addEventListener('DOMContentLoaded', function () {
     container.innerHTML = '';
     (trades || getAllTrades()).forEach(t => container.appendChild(createTradeCard(t)));
   };
-  window.filterTradesForHistory = function (days, from, to) {
-    let trades = getAllTrades();
-    if (days) {
-      const cutoff = new Date(); cutoff.setDate(cutoff.getDate() - days);
-      trades = trades.filter(t => new Date(t.date) >= cutoff);
-    }
-    if (from) trades = trades.filter(t => new Date(t.date) >= new Date(from));
-    if (to) trades = trades.filter(t => new Date(t.date) <= new Date(to));
-    return trades.sort((a, b) => new Date(b.date) - new Date(a.date));
-  };
+  // Replace the existing filterTradesForHistory function with this one
+window.filterTradesForHistory = function (days, from, to) {
+  let trades = getAllTrades();
+  
+  if (days) {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - days);
+    trades = trades.filter(t => new Date(t.date) >= cutoff);
+  }
+  
+  // Fix date filtering to handle the date string format properly
+  if (from) {
+    const fromDate = new Date(from);
+    trades = trades.filter(t => new Date(t.date) >= fromDate);
+  }
+  
+  if (to) {
+    const toDate = new Date(to);
+    toDate.setHours(23, 59, 59, 999); // Include the entire end day
+    trades = trades.filter(t => new Date(t.date) <= toDate);
+  }
+  
+  return trades.sort((a, b) => new Date(b.date) - new Date(a.date));
+};
 
   // ===== EmailJS =====
   function showToast(message, type = "success") {
