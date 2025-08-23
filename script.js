@@ -416,6 +416,12 @@ window.filterTradesForHistory = function (days, from, to) {
 
 const blogPosts = [
     {
+        id: 'market-rateupdate-shorts-on-market',
+        title: 'Market Dump is Coming?',
+        description: 'I’m hunting a BIG short on $BTC?',
+        link: 'https://x.com/areebithink/status/1957904824881844492',
+        date: '2025-08-20'
+    },{
         id: 'interest-rates-impact',
         title: 'What are interest rates?',
         description: 'Why rate cuts pump markets?',
@@ -437,40 +443,40 @@ const blogPosts = [
         date: '2025-08-22'
     },
     {
-        id: 'us-debt-ceiling-talks',
-        title: 'The US Debt Ceiling: What Traders Need to Know',
-        description: 'Understanding the risks and opportunities of government debt negotiations.',
-        link: 'https://x.com/sample_debt_post',
-        date: '2024-05-01'
+        id: 'Market Analysis',
+        title: 'Market Analysis: What Traders Need to Know',
+        description: 'Market Trend and What i am doing now.',
+        link: 'https://x.com/areebithink/status/1958618691823600126',
+        date: '2025-08-22'
     },
-    {
-        id: 'oil-price-forecast-2024',
-        title: 'Oil Price Forecast for Late 2024',
-        description: 'A look at geopolitical factors and their effect on crude oil prices.',
-        link: 'https://x.com/sample_oil_post',
-        date: '2024-01-20'
-    },
-    {
-        id: 'nasdaq-100-technical-breakdown',
-        title: 'NASDAQ 100 Technical Breakdown',
-        description: 'A detailed analysis of key support and resistance levels for the QQQ.',
-        link: 'https://x.com/sample_nasdaq_post',
-        date: '2023-11-15'
-    },
-    {
-        id: 'gold-and-silver-outlook',
-        title: 'Gold and Silver Outlook for Q3',
-        description: 'Why precious metals might be a key hedge against global instability.',
-        link: 'https://x.com/sample_metals_post',
-        date: '2023-09-01'
-    },
-    {
-        id: 'ethereum-spot-etf-implications',
-        title: 'Ethereum Spot ETF: Market Impact',
-        description: 'The potential long-term effects of an approved Ethereum ETF.',
-        link: 'https://x.com/sample_eth_etf_post',
-        date: '2024-05-23'
-    }
+    // {
+    //     id: 'oil-price-forecast-2024',
+    //     title: 'Oil Price Forecast for Late 2024',
+    //     description: 'A look at geopolitical factors and their effect on crude oil prices.',
+    //     link: 'https://x.com/sample_oil_post',
+    //     date: '2024-01-20'
+    // },
+    // {
+    //     id: 'nasdaq-100-technical-breakdown',
+    //     title: 'NASDAQ 100 Technical Breakdown',
+    //     description: 'A detailed analysis of key support and resistance levels for the QQQ.',
+    //     link: 'https://x.com/sample_nasdaq_post',
+    //     date: '2023-11-15'
+    // },
+    // {
+    //     id: 'gold-and-silver-outlook',
+    //     title: 'Gold and Silver Outlook for Q3',
+    //     description: 'Why precious metals might be a key hedge against global instability.',
+    //     link: 'https://x.com/sample_metals_post',
+    //     date: '2023-09-01'
+    // },
+    // {
+    //     id: 'ethereum-spot-etf-implications',
+    //     title: 'Ethereum Spot ETF: Market Impact',
+    //     description: 'The potential long-term effects of an approved Ethereum ETF.',
+    //     link: 'https://x.com/sample_eth_etf_post',
+    //     date: '2024-05-23'
+    // }
 ];
 
 function createBlogPostCard(post) {
