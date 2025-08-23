@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "BTCUSDT Long",
-    //   symbol: "BTCUSDT",
-    //   entry: 112156, tp: 113761, sl: 0.0,
-    //   date: "2025-08-22", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1958622382022885496"
-    // },
-    // {
-    //   id: "RUN-002", title: "ETHUSDT Long",
-    //   symbol: "ETHUSDT",
-    //   entry: 4226.16, tp: 4341.29, sl: 0.0, date: "2025-08-22",
-    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622450591440964"
-    // },
+    {
+      id: "RUN-001", title: "ENSUSDT Long",
+      symbol: "ENSUSDT",
+      entry: 26.9, tp: 27.883, sl: 0.0,
+      date: "2025-08-23", outcome: "running",
+      proof: "https://x.com/areebithink/status/1959260597398446132"
+    },
+    {
+      id: "RUN-002", title: "BEAMXUSDT Long",
+      symbol: "BEAMXUSDT",
+      entry: 0.007918, tp: 0.008161, sl: 0.0, date: "2025-08-23",
+      outcome: "running", proof: "https://x.com/areebithink/status/1959261474670666229"
+    },
     // {
     //   id: "RUN-003", title: "BBUSDT Long", symbol: "BBUSDT",
     //   entry: 0.125262, tp: 0.13284, sl: 0.0, date: "2025-08-22",
@@ -416,25 +416,25 @@ window.filterTradesForHistory = function (days, from, to) {
 
 const blogPosts = [
     {
-        id: 'fed-rate-impact',
-        title: 'Fed Rate Impact on Stock and Crypto',
-        description: 'Analysis of how recent Fed decisions influence the market.',
-        link: 'https://x.com/sample_fed_post',
-        date: '2024-07-20'
+        id: 'interest-rates-impact',
+        title: 'What are interest rates?',
+        description: 'Why rate cuts pump markets?',
+        link: 'https://x.com/areebithink/status/1958912818545312010',
+        date: '2025-08-22'
     },
     {
-        id: 'bitcoin-halving-2024',
-        title: 'Bitcoin Halving 2024',
-        description: 'Historical trends and future price projections.',
-        link: 'https://x.com/sample_halving_post',
-        date: '2024-04-20'
+        id: 'why-markets-pump',
+        title: 'Why did markets pump?',
+        description: 'Mainly 2 news - Chair Powell Speech - Canada: Removing tariffs.',
+        link: 'https://x.com/areebithink/status/1958911930992926934',
+        date: '2025-08-22'
     },
     {
-        id: 'inflation-report-june',
-        title: 'June Inflation Report Analysis',
-        description: 'A deep dive into the latest CPI data and its market implications.',
-        link: 'https://x.com/sample_cpi_post',
-        date: '2024-06-12'
+        id: 'powell-speech-analysis',
+        title: 'Before Powell Speech Analysis',
+        description: 'Why Powell Speech can impact markets.',
+        link: 'https://x.com/areebithink/status/1958859104442777896',
+        date: '2025-08-22'
     },
     {
         id: 'us-debt-ceiling-talks',
