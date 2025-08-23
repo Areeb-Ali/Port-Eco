@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-009",
       title: "PLUMEUSDT Long",
       symbol: "PLUMEUSDT",
-      entry: 0.08382, tp: 0.08382, sl: 0.08097,
+      entry: 0.08382, tp: 0.09042, sl: 0.08097,
       date: "2025-08-22",
       outcome: "breakeven",
       proof: "https://x.com/areebithink/status/1958866435247329744"
@@ -154,6 +154,60 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-22",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1958622846210785384"
+    },
+    {
+      id: "REC-013",
+      title: "ADA Short",
+      symbol: "ADAUSDT",
+      entry: 0.9241, tp: 0.9124, sl: 0.9349,
+      date: "2025-08-23",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958923725044425125"
+    },
+    {
+      id: "REC-014",
+      title: "SOL Short",
+      symbol: "SOLUSDT",
+      entry: 195.33, tp: 183.17, sl: 200.98,
+      date: "2025-08-23",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1958923725044425125"
+    },
+    {
+      id: "REC-015",
+      title: "AVAX Short",
+      symbol: "AVAXUSDT",
+      entry: 24.732, tp: 24.595, sl: 0.0,
+      date: "2025-08-23",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958923725044425125"
+    },
+    {
+      id: "REC-016",
+      title: "NEAR Short",
+      symbol: "NEARUSDT",
+      entry: 2.638, tp: 2.63, sl: 0.0,
+      date: "2025-08-23",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958923725044425125"
+    },
+    {
+      id: "REC-017",
+      title: "SUI Short",
+      symbol: "SUIUSDT",
+      entry: 3.696, tp: 3.6716, sl: 0.0,
+      date: "2025-08-23",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1958923725044425125"
+    },
+    {
+      id: "REC-018",
+      title: "LINK Short",
+      symbol: "LINKUSDT",
+      entry: 26.923, tp: 24.7, sl: 27.5,
+      date: "2025-08-23",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1958923725044425125"
     }
   ];
 
