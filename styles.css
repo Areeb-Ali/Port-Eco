@@ -593,3 +593,111 @@ Reduce gap between ticker and hero section on mobile screens
     margin-top: 0 !important;
   }
 } */
+
+/* Styles for the new "Market History" page */
+.page-content {
+    padding-top: calc(var(--nav-height) + var(--ticker-height) + 1.5rem);
+}
+
+.search-bar-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+}
+
+#searchInput {
+    padding: 12px 12px 12px 45px;
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.2s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-controls label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.filter-controls select {
+    padding: 8px;
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* New button style for "View All Analysis" */
+.view-all-btn {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#noResults {
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Additional mobile responsiveness for the market history page */
+@media (max-width: 480px) {
+  /* Make the filters stack vertically */
+  .filters {
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to fill the container */
+  }
+
+  /* Make the search bar and select menu full-width */
+  .search-bar-container,
+  .filter-controls {
+    width: 100%;
+  }
+
+  /* Adjust padding for search input to fit better on small screens */
+  #searchInput {
+    padding-left: 15px; /* Remove the extra space for the icon, which we'll hide */
+    font-size: 0.9rem;
+  }
+  
+  /* Hide the search icon on very small screens to save space */
+  .search-bar-container i {
+    display: none;
+  }
+}

@@ -413,3 +413,128 @@ window.filterTradesForHistory = function (days, from, to) {
   // ===== Expose Portfolio =====
   window.__trading_portfolio = { getAllTrades, recentTrades, runningTrades, renderTrades, createTradeCard };
 });
+
+const blogPosts = [
+    {
+        id: 'fed-rate-impact',
+        title: 'Fed Rate Impact on Stock and Crypto',
+        description: 'Analysis of how recent Fed decisions influence the market.',
+        link: 'https://x.com/sample_fed_post',
+        date: '2024-07-20'
+    },
+    {
+        id: 'bitcoin-halving-2024',
+        title: 'Bitcoin Halving 2024',
+        description: 'Historical trends and future price projections.',
+        link: 'https://x.com/sample_halving_post',
+        date: '2024-04-20'
+    },
+    {
+        id: 'inflation-report-june',
+        title: 'June Inflation Report Analysis',
+        description: 'A deep dive into the latest CPI data and its market implications.',
+        link: 'https://x.com/sample_cpi_post',
+        date: '2024-06-12'
+    },
+    {
+        id: 'us-debt-ceiling-talks',
+        title: 'The US Debt Ceiling: What Traders Need to Know',
+        description: 'Understanding the risks and opportunities of government debt negotiations.',
+        link: 'https://x.com/sample_debt_post',
+        date: '2024-05-01'
+    },
+    {
+        id: 'oil-price-forecast-2024',
+        title: 'Oil Price Forecast for Late 2024',
+        description: 'A look at geopolitical factors and their effect on crude oil prices.',
+        link: 'https://x.com/sample_oil_post',
+        date: '2024-01-20'
+    },
+    {
+        id: 'nasdaq-100-technical-breakdown',
+        title: 'NASDAQ 100 Technical Breakdown',
+        description: 'A detailed analysis of key support and resistance levels for the QQQ.',
+        link: 'https://x.com/sample_nasdaq_post',
+        date: '2023-11-15'
+    },
+    {
+        id: 'gold-and-silver-outlook',
+        title: 'Gold and Silver Outlook for Q3',
+        description: 'Why precious metals might be a key hedge against global instability.',
+        link: 'https://x.com/sample_metals_post',
+        date: '2023-09-01'
+    },
+    {
+        id: 'ethereum-spot-etf-implications',
+        title: 'Ethereum Spot ETF: Market Impact',
+        description: 'The potential long-term effects of an approved Ethereum ETF.',
+        link: 'https://x.com/sample_eth_etf_post',
+        date: '2024-05-23'
+    }
+];
+
+function createBlogPostCard(post) {
+    return `
+        <div class="blog-card">
+            <h3>${post.title}</h3>
+            <p>${post.description}</p>
+            <span class="trade-date">${post.date}</span>
+            <a href="${post.link}" target="_blank" rel="noopener">Read More</a>
+        </div>
+    `;
+}
+
+function loadBlogPosts() {
+    const latestBlogContainer = document.getElementById('latestBlogPosts');
+    const fullBlogContainer = document.getElementById('fullBlogLogs');
+
+    // Check if we are on the main page
+    if (latestBlogContainer) {
+        // Sort to show newest first for the main page preview
+        const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+        const latestSix = sortedPosts.slice(0, 6);
+        latestBlogContainer.innerHTML = latestSix.map(createBlogPostCard).join('');
+    }
+
+    // Check if we are on the market history page
+    if (fullBlogContainer) {
+        const searchInput = document.getElementById('searchInput');
+        const sortSelect = document.getElementById('sortSelect');
+        const noResultsMessage = document.getElementById('noResults');
+
+        let currentPosts = [...blogPosts];
+
+        function renderPosts() {
+            const query = searchInput.value.toLowerCase();
+            const sortValue = sortSelect.value;
+
+            let filteredPosts = currentPosts.filter(post =>
+                post.title.toLowerCase().includes(query)
+            );
+
+            if (sortValue === 'newest') {
+                filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+            } else if (sortValue === 'oldest') {
+                filteredPosts.sort((a, b) => new Date(a.date) - new Date(b.date));
+            }
+
+            if (filteredPosts.length === 0) {
+                fullBlogContainer.innerHTML = '';
+                noResultsMessage.classList.remove('hidden');
+            } else {
+                fullBlogContainer.innerHTML = filteredPosts.map(createBlogPostCard).join('');
+                noResultsMessage.classList.add('hidden');
+            }
+        }
+
+        // Initial render
+        renderPosts();
+
+        // Event listeners for search and sort
+        searchInput.addEventListener('input', renderPosts);
+        sortSelect.addEventListener('change', renderPosts);
+    }
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', loadBlogPosts);
