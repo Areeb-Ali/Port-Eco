@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "ENSUSDT Long",
-      symbol: "ENSUSDT",
-      entry: 26.9, tp: 27.883, sl: 0.0,
-      date: "2025-08-23", outcome: "running",
-      proof: "https://x.com/areebithink/status/1959260597398446132"
-    },
+    // {
+    //   id: "RUN-001", title: "ENSUSDT Long",
+    //   symbol: "ENSUSDT",
+    //   entry: 26.9, tp: 27.883, sl: 0.0,
+    //   date: "2025-08-23", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1959260597398446132"
+    // },
     // {
     //   id: "RUN-002", title: "BEAMXUSDT Long",
     //   symbol: "BEAMXUSDT",
@@ -217,6 +217,15 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-24",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1959261474670666229"
+    },
+    {
+      id: "REC-020",
+      title: "ENS Long",
+      symbol: "ENSUSDT",
+      entry: 26.584, tp: 26.984, sl: 0.0,
+      date: "2025-08-24",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1959260597398446132"
     }
   ];
 
