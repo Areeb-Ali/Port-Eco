@@ -461,19 +461,19 @@ const blogPosts = [
         date: '2025-08-22'
     },
     {
-        id: 'Market Analysis',
+        id: 'market-analysis',
         title: 'Market Analysis: What Traders Need to Know',
         description: 'Market Trend and What i am doing now.',
         link: 'https://x.com/areebithink/status/1958618691823600126',
         date: '2025-08-22'
     },
-    // {
-    //     id: 'oil-price-forecast-2024',
-    //     title: 'Oil Price Forecast for Late 2024',
-    //     description: 'A look at geopolitical factors and their effect on crude oil prices.',
-    //     link: 'https://x.com/sample_oil_post',
-    //     date: '2024-01-20'
-    // },
+    {
+        id: 'next-week-market-plan-25/08/2025',
+        title: 'Next Week Market Plan',
+        description: 'Most likely case: A strong pump continue.',
+        link: 'https://x.com/areebithink/status/1959692233403408702',
+        date: '2025-08-25'
+    },
     // {
     //     id: 'nasdaq-100-technical-breakdown',
     //     title: 'NASDAQ 100 Technical Breakdown',
