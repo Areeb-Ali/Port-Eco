@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // ===== Sample Trades =====
   const runningTrades = [
     {
-      id: "RUN-001", title: "ETHUSDT Long",
-      symbol: "ETHUSDT",
-      entry: 4589.45, tp: 4624.06, sl: 0.0,
+      id: "RUN-001", title: "ENSUSDT Long",
+      symbol: "ENSUSDT",
+      entry: 24.514, tp: 25.249, sl: 0.0,
       date: "2025-08-25", outcome: "running",
-      proof: "https://x.com/areebithink/status/1959892663001571568"
+      proof: "https://x.com/areebithink/status/1959969447919378629"
     },
     {
       id: "RUN-002", title: "NMRUSDT Long",
@@ -226,6 +226,15 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-24",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1959260597398446132"
+    },
+    {
+      id: "REC-021",
+      title: "ETH Long",
+      symbol: "ETHUSDT",
+      entry: 4589.45, tp: 4624.06, sl: 4534.39,
+      date: "2025-08-25",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1959892663001571568"
     }
   ];
 
