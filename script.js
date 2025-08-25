@@ -13,29 +13,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "ENSUSDT Long",
-    //   symbol: "ENSUSDT",
-    //   entry: 26.9, tp: 27.883, sl: 0.0,
-    //   date: "2025-08-23", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1959260597398446132"
-    // },
-    // {
-    //   id: "RUN-002", title: "BEAMXUSDT Long",
-    //   symbol: "BEAMXUSDT",
-    //   entry: 0.007918, tp: 0.008161, sl: 0.0, date: "2025-08-23",
-    //   outcome: "running", proof: "https://x.com/areebithink/status/1959261474670666229"
-    // },
-    // {
-    //   id: "RUN-003", title: "BBUSDT Long", symbol: "BBUSDT",
-    //   entry: 0.125262, tp: 0.13284, sl: 0.0, date: "2025-08-22",
-    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
-    // },
-    // {
-    //   id: "RUN-004", title: "ENSUSDT Long", symbol: "ENSUSDT",
-    //   entry: 24.453, tp: 25.234, sl: 0.0, date: "2025-08-22",
-    //   outcome: "running", proof: "https://x.com/areebithink/status/1958622846210785384"
-    // },
+    {
+      id: "RUN-001", title: "ETHUSDT Long",
+      symbol: "ETHUSDT",
+      entry: 4589.45, tp: 4624.06, sl: 0.0,
+      date: "2025-08-25", outcome: "running",
+      proof: "https://x.com/areebithink/status/1959892663001571568"
+    },
+    {
+      id: "RUN-002", title: "NMRUSDT Long",
+      symbol: "NMRUSDT",
+      entry: 8.249, tp: 8.558, sl: 0.0, date: "2025-08-25",
+      outcome: "running", proof: "https://x.com/areebithink/status/1959893761963819116"
+    },
+    {
+      id: "RUN-003", title: "PHAUSDT Long", symbol: "PHAUSDT",
+      entry: 0.11577, tp: 0.1206, sl: 0.0, date: "2025-08-25",
+      outcome: "running", proof: "https://x.com/areebithink/status/1959894587734106548"
+    },
+    {
+      id: "RUN-004", title: "BBUSDT Long", symbol: "BBUSDT",
+      entry: 0.14125, tp: 0.14734, sl: 0.0, date: "2025-08-25",
+      outcome: "running", proof: "https://x.com/areebithink/status/1959899551185432599"
+    },
     // {
     //   id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
     //   entry: 0.6682, tp: 0.6827, sl: 0.6482, date: "2025-08-22",
@@ -474,20 +474,20 @@ const blogPosts = [
         link: 'https://x.com/areebithink/status/1959692233403408702',
         date: '2025-08-25'
     },
-    // {
-    //     id: 'nasdaq-100-technical-breakdown',
-    //     title: 'NASDAQ 100 Technical Breakdown',
-    //     description: 'A detailed analysis of key support and resistance levels for the QQQ.',
-    //     link: 'https://x.com/sample_nasdaq_post',
-    //     date: '2023-11-15'
-    // },
-    // {
-    //     id: 'gold-and-silver-outlook',
-    //     title: 'Gold and Silver Outlook for Q3',
-    //     description: 'Why precious metals might be a key hedge against global instability.',
-    //     link: 'https://x.com/sample_metals_post',
-    //     date: '2023-09-01'
-    // },
+    {
+        id: 'bitcoin-market-update',
+        title: 'Bitcoin Market Update',
+        description: 'Deeper dump possible but Longs still play out?',
+        link: 'https://x.com/areebithink/status/1959710183757852908',
+        date: '2025-08-25'
+    },
+    {
+        id: 'alarming-btc-update',
+        title: 'Alarming BITCOIN Update',
+        description: 'BTC closes below $110K, then it’s alarming?',
+        link: 'https://x.com/areebithink/status/1959823666155548743',
+        date: '2025-08-25'
+    },
     // {
     //     id: 'ethereum-spot-etf-implications',
     //     title: 'Ethereum Spot ETF: Market Impact',
