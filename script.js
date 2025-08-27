@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
       outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
     },
-    {
-      id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
-      entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
-      outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
-    },
+    // {
+    //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
+    //   entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
+    // },
     // {
     //   id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
     //   entry: 0.6682, tp: 0.6827, sl: 0.6482, date: "2025-08-22",
@@ -262,6 +262,15 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-27",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1959899551185432599"
+    },
+    {
+      id: "REC-025",
+      title: "ARKM Long",
+      symbol: "ARKMUSDT",
+      entry: 0.5037, tp: 0.5098, sl: 0.4986,
+      date: "2025-08-27",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1960614177262715337"
     }
   ];
 
