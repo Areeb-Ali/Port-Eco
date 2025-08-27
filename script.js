@@ -20,21 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-25", outcome: "running",
       proof: "https://x.com/areebithink/status/1959969447919378629"
     },
-    // {
-    //   id: "RUN-002", title: "NMRUSDT Long",
-    //   symbol: "NMRUSDT",
-    //   entry: 8.249, tp: 8.558, sl: 0.0, date: "2025-08-25",
-    //   outcome: "running", proof: "https://x.com/areebithink/status/1959893761963819116"
-    // },
     {
-      id: "RUN-003", title: "PHAUSDT Long", symbol: "PHAUSDT",
-      entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-25",
-      outcome: "running", proof: "https://x.com/areebithink/status/1959894587734106548"
+      id: "RUN-002", title: "ADAUSDT Long",
+      symbol: "ADAUSDT",
+      entry: 0.8576, tp: 0.8883, sl: 0.0, date: "2025-08-27",
+      outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
     },
     {
-      id: "RUN-004", title: "BBUSDT Long", symbol: "BBUSDT",
-      entry: 0.13948, tp: 0.14034, sl: 0.0, date: "2025-08-25",
-      outcome: "running", proof: "https://x.com/areebithink/status/1959899551185432599"
+      id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
+      entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
+      outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
+    },
+    {
+      id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
+      entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
+      outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
     },
     // {
     //   id: "RUN-005", title: "FETUSDT Long", symbol: "FETUSDT",
@@ -237,13 +237,31 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1959892663001571568"
     },
     {
-      id: "REC-021",
+      id: "REC-022",
       title: "NMR Long",
       symbol: "NMRUSDT",
       entry: 8.149, tp: 9.158, sl: 7.817,
       date: "2025-08-26",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1959892663001571568"
+    },
+    {
+      id: "REC-023",
+      title: "PHA Long",
+      symbol: "PHAUSDT",
+      entry: 0.11327, tp: 0.11741, sl: 0.0,
+      date: "2025-08-27",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1959894587734106548"
+    },
+    {
+      id: "REC-024",
+      title: "BB Long",
+      symbol: "BBUSDT",
+      entry: 0.13948, tp: 0.14105, sl: 0.0,
+      date: "2025-08-27",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1959899551185432599"
     }
   ];
 
