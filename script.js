@@ -16,24 +16,24 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: "RUN-001", title: "ENSUSDT Long",
       symbol: "ENSUSDT",
-      entry: 24.514, tp: 25.249, sl: 0.0,
+      entry: 23.812, tp: 27.37, sl: 0.0,
       date: "2025-08-25", outcome: "running",
       proof: "https://x.com/areebithink/status/1959969447919378629"
     },
-    {
-      id: "RUN-002", title: "NMRUSDT Long",
-      symbol: "NMRUSDT",
-      entry: 8.249, tp: 8.558, sl: 0.0, date: "2025-08-25",
-      outcome: "running", proof: "https://x.com/areebithink/status/1959893761963819116"
-    },
+    // {
+    //   id: "RUN-002", title: "NMRUSDT Long",
+    //   symbol: "NMRUSDT",
+    //   entry: 8.249, tp: 8.558, sl: 0.0, date: "2025-08-25",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1959893761963819116"
+    // },
     {
       id: "RUN-003", title: "PHAUSDT Long", symbol: "PHAUSDT",
-      entry: 0.11577, tp: 0.1206, sl: 0.0, date: "2025-08-25",
+      entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-25",
       outcome: "running", proof: "https://x.com/areebithink/status/1959894587734106548"
     },
     {
       id: "RUN-004", title: "BBUSDT Long", symbol: "BBUSDT",
-      entry: 0.14125, tp: 0.14734, sl: 0.0, date: "2025-08-25",
+      entry: 0.13948, tp: 0.14034, sl: 0.0, date: "2025-08-25",
       outcome: "running", proof: "https://x.com/areebithink/status/1959899551185432599"
     },
     // {
@@ -233,6 +233,15 @@ document.addEventListener('DOMContentLoaded', function () {
       symbol: "ETHUSDT",
       entry: 4589.45, tp: 4624.06, sl: 4534.39,
       date: "2025-08-25",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1959892663001571568"
+    },
+    {
+      id: "REC-021",
+      title: "NMR Long",
+      symbol: "NMRUSDT",
+      entry: 8.149, tp: 9.158, sl: 7.817,
+      date: "2025-08-26",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1959892663001571568"
     }
@@ -497,13 +506,13 @@ const blogPosts = [
         link: 'https://x.com/areebithink/status/1959823666155548743',
         date: '2025-08-25'
     },
-    // {
-    //     id: 'ethereum-spot-etf-implications',
-    //     title: 'Ethereum Spot ETF: Market Impact',
-    //     description: 'The potential long-term effects of an approved Ethereum ETF.',
-    //     link: 'https://x.com/sample_eth_etf_post',
-    //     date: '2024-05-23'
-    // }
+    {
+        id: 'btc-levels-trends',
+        title: 'BTC Levels & Trend',
+        description: 'BTC facing resistance? Bitcoin may dip to $110,452?.',
+        link: 'https://x.com/areebithink/status/1960538888319152282',
+        date: '2024-05-27'
+    }
 ];
 
 function createBlogPostCard(post) {
