@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 0.8576, tp: 0.8883, sl: 0.0, date: "2025-08-27",
       outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
     },
-    {
-      id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
-      entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
-      outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
-    },
+    // {
+    //   id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
+    //   entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
+    //   outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
+    // },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
     //   entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
@@ -269,6 +269,15 @@ document.addEventListener('DOMContentLoaded', function () {
       symbol: "ARKMUSDT",
       entry: 0.5037, tp: 0.5098, sl: 0.4986,
       date: "2025-08-27",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1960614177262715337"
+    },
+    {
+      id: "REC-025",
+      title: "BEAMX Long",
+      symbol: "BEAMXUSDT",
+      entry: 0.11327, tp: 0.11741, sl: 0.0,
+      date: "2025-08-28",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1960614177262715337"
     }
