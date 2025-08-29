@@ -575,21 +575,21 @@ const blogPosts = [
         title: 'BTC Levels & Trend',
         description: 'BTC facing resistance? Bitcoin may dip to $110,452?.',
         link: 'https://x.com/areebithink/status/1960538888319152282',
-        date: '2024-05-27'
+        date: '2024-08-27'
     },
     {
         id: '010',
         title: '🇵🇰 Biggest Crypto News',
         description: 'PVARA held its 1st board meeting with FM, SBP, SECP, FBR & PCC.',
         link: 'https://x.com/areebithink/status/1960546781818921383',
-        date: '2024-05-27'
+        date: '2024-08-27'
     },
     {
         id: '011',
         title: 'NVIDIA earnings Report',
         description: 'Growth is booming without China.',
         link: 'https://x.com/areebithink/status/1960818698765394275',
-        date: '2024-05-28'
+        date: '2024-09-28'
     }
 ];
 
