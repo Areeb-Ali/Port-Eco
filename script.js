@@ -516,66 +516,80 @@ window.filterTradesForHistory = function (days, from, to) {
 
 const blogPosts = [
     {
-        id: 'market-rateupdate-shorts-on-market',
+        id: '001',
         title: 'Market Dump is Coming?',
         description: 'I’m hunting a BIG short on $BTC?',
         link: 'https://x.com/areebithink/status/1957904824881844492',
         date: '2025-08-20'
     },{
-        id: 'interest-rates-impact',
+        id: '002',
         title: 'What are interest rates?',
         description: 'Why rate cuts pump markets?',
         link: 'https://x.com/areebithink/status/1958912818545312010',
         date: '2025-08-22'
     },
     {
-        id: 'why-markets-pump',
+        id: '003',
         title: 'Why did markets pump?',
         description: 'Mainly 2 news - Chair Powell Speech - Canada: Removing tariffs.',
         link: 'https://x.com/areebithink/status/1958911930992926934',
         date: '2025-08-22'
     },
     {
-        id: 'powell-speech-analysis',
+        id: '004',
         title: 'Before Powell Speech Analysis',
         description: 'Why Powell Speech can impact markets.',
         link: 'https://x.com/areebithink/status/1958859104442777896',
         date: '2025-08-22'
     },
     {
-        id: 'market-analysis',
+        id: '005',
         title: 'Market Analysis: What Traders Need to Know',
         description: 'Market Trend and What i am doing now.',
         link: 'https://x.com/areebithink/status/1958618691823600126',
         date: '2025-08-22'
     },
     {
-        id: 'next-week-market-plan-25/08/2025',
+        id: '006',
         title: 'Next Week Market Plan',
         description: 'Most likely case: A strong pump continue.',
         link: 'https://x.com/areebithink/status/1959692233403408702',
         date: '2025-08-25'
     },
     {
-        id: 'bitcoin-market-update',
+        id: '007',
         title: 'Bitcoin Market Update',
         description: 'Deeper dump possible but Longs still play out?',
         link: 'https://x.com/areebithink/status/1959710183757852908',
         date: '2025-08-25'
     },
     {
-        id: 'alarming-btc-update',
+        id: '008',
         title: 'Alarming BITCOIN Update',
         description: 'BTC closes below $110K, then it’s alarming?',
         link: 'https://x.com/areebithink/status/1959823666155548743',
         date: '2025-08-25'
     },
     {
-        id: 'btc-levels-trends',
+        id: '009',
         title: 'BTC Levels & Trend',
         description: 'BTC facing resistance? Bitcoin may dip to $110,452?.',
         link: 'https://x.com/areebithink/status/1960538888319152282',
         date: '2024-05-27'
+    },
+    {
+        id: '010',
+        title: '🇵🇰 Biggest Crypto News',
+        description: 'PVARA held its 1st board meeting with FM, SBP, SECP, FBR & PCC.',
+        link: 'https://x.com/areebithink/status/1960546781818921383',
+        date: '2024-05-27'
+    },
+    {
+        id: '011',
+        title: 'NVIDIA earnings Report',
+        description: 'Growth is booming without China.',
+        link: 'https://x.com/areebithink/status/1960818698765394275',
+        date: '2024-05-28'
     }
 ];
 
