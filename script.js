@@ -589,7 +589,7 @@ const blogPosts = [
         title: 'NVIDIA earnings Report',
         description: 'Growth is booming without China.',
         link: 'https://x.com/areebithink/status/1960818698765394275',
-        date: '2024-09-28'
+        date: '2024-08-28'
     }
 ];
 
