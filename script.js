@@ -14,18 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
   // ===== Sample Trades =====
   const runningTrades = [
     {
-      id: "RUN-001", title: "ENSUSDT Long",
-      symbol: "ENSUSDT",
-      entry: 23.812, tp: 27.37, sl: 0.0,
-      date: "2025-08-25", outcome: "running",
-      proof: "https://x.com/areebithink/status/1959969447919378629"
+      id: "RUN-001", title: "ETHUSDT Long",
+      symbol: "ETHUSDT",
+      entry: 4446.39, tp: 4454.74, sl: 0.0,
+      date: "2025-08-28", outcome: "running",
+      proof: "https://x.com/areebithink/status/1961067451783024896"
     },
-    {
-      id: "RUN-002", title: "ADAUSDT Long",
-      symbol: "ADAUSDT",
-      entry: 0.8576, tp: 0.8883, sl: 0.0, date: "2025-08-27",
-      outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
-    },
+    // {
+    //   id: "RUN-002", title: "SOLUSDT Long",
+    //   symbol: "SOLUSDT",
+    //   entry: 208.98, tp: 214.48, sl: 0.0,
+    //  date: "2025-08-29", outcome: "running",
+    //  proof: "https://x.com/areebithink/status/1961338488025985430"
+    // },
     // {
     //   id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
     //   entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
@@ -280,6 +281,33 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-28",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1960614177262715337"
+    },
+    {
+      id: "REC-026",
+      title: "ADA Long",
+      symbol: "ADAUSDT",
+      entry: 0.8576, tp: 0.8724, sl: 0.0,
+      date: "2025-08-28",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1960614177262715337"
+    },
+    {
+      id: "REC-027",
+      title: "ENS Long",
+      symbol: "ENSUSDT",
+      entry: 23.812, tp: 23.987, sl: 0.0,
+      date: "2025-08-29",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1959969447919378629"
+    },
+    {
+      id: "REC-028",
+      title: "SOL Long",
+      symbol: "SOLUSDT",
+      entry: 208.98, tp: 214.48, sl: 206.67,
+      date: "2025-08-29",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1961338488025985430"
     }
   ];
 
