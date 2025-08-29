@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-28", outcome: "running",
       proof: "https://x.com/areebithink/status/1961067451783024896"
     },
-    // {
-    //   id: "RUN-002", title: "SOLUSDT Long",
-    //   symbol: "SOLUSDT",
-    //   entry: 208.98, tp: 214.48, sl: 0.0,
-    //  date: "2025-08-29", outcome: "running",
-    //  proof: "https://x.com/areebithink/status/1961338488025985430"
-    // },
+    {
+      id: "RUN-002", title: "BTCUSDT Long",
+      symbol: "BTCUSDT",
+      entry: 107856, tp: 109515.9, sl: 0.0,
+     date: "2025-08-29", outcome: "running",
+     proof: "https://x.com/areebithink/status/1961524742688838009"
+    },
     // {
     //   id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
     //   entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
