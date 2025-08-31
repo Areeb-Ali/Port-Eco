@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "ETHUSDT Long",
-      symbol: "ETHUSDT",
-      entry: 4446.39, tp: 4454.74, sl: 0.0,
-      date: "2025-08-28", outcome: "running",
-      proof: "https://x.com/areebithink/status/1961067451783024896"
-    },
-    {
-      id: "RUN-002", title: "BTCUSDT Long",
-      symbol: "BTCUSDT",
-      entry: 107856, tp: 109515.9, sl: 0.0,
-     date: "2025-08-29", outcome: "running",
-     proof: "https://x.com/areebithink/status/1961524742688838009"
-    },
+    // {
+    //   id: "RUN-001", title: "ETHUSDT Long",
+    //   symbol: "ETHUSDT",
+    //   entry: 4446.39, tp: 4454.74, sl: 0.0,
+    //   date: "2025-08-28", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1961067451783024896"
+    // },
+    // {
+    //   id: "RUN-002", title: "BTCUSDT Long",
+    //   symbol: "BTCUSDT",
+    //   entry: 107856, tp: 109515.9, sl: 0.0,
+    //  date: "2025-08-29", outcome: "running",
+    //  proof: "https://x.com/areebithink/status/1961524742688838009"
+    // },
     // {
     //   id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
     //   entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
@@ -308,6 +308,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-29",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1961338488025985430"
+    },
+    {
+      id: "REC-029",
+      title: "ETH Long",
+      symbol: "ETHUSDT",
+      entry: 4446.39, tp: 4454.74, sl: 0.0,
+      date: "2025-08-31",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1961067451783024896"
+    },
+    {
+      id: "REC-030",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 107856, tp: 109515.9, sl: 0.0,
+      date: "2025-08-31",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1961524742688838009"
     }
   ];
 
