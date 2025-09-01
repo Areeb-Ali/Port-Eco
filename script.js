@@ -13,25 +13,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "ETHUSDT Long",
-    //   symbol: "ETHUSDT",
-    //   entry: 4446.39, tp: 4454.74, sl: 0.0,
-    //   date: "2025-08-28", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1961067451783024896"
-    // },
-    // {
-    //   id: "RUN-002", title: "BTCUSDT Long",
-    //   symbol: "BTCUSDT",
-    //   entry: 107856, tp: 109515.9, sl: 0.0,
-    //  date: "2025-08-29", outcome: "running",
-    //  proof: "https://x.com/areebithink/status/1961524742688838009"
-    // },
-    // {
-    //   id: "RUN-003", title: "BEAMXUSDT Long", symbol: "BEAMXUSDT",
-    //   entry: 0.11327, tp: 0.11741, sl: 0.0, date: "2025-08-27",
-    //   outcome: "running", proof: "https://x.com/areebithink/status/1960614177262715337"
-    // },
+    {
+      id: "RUN-001", title: "ETHUSDT short",
+      symbol: "ETHUSDT",
+      entry: 4475.99, tp: 4376.66, sl: 4497.57,
+      date: "2025-08-28", outcome: "running",
+      proof: "https://x.com/areebithink/status/1962431641768378506"
+    },
+    {
+      id: "RUN-002", title: "BTCUSDT short",
+      symbol: "BTCUSDT",
+      entry: 109599.9, tp: 107856.3, sl: 110085.6,
+      date: "2025-08-29", outcome: "running",
+      proof: "https://x.com/areebithink/status/1962431641768378506"
+    },
+    {
+      id: "RUN-003", title: "FETUSDT short",
+      symbol: "FETUSDT",
+      entry: 0.6159, tp: 0.601, sl: 0.6214,
+      date: "2025-08-27", outcome: "running",
+      proof: "https://x.com/areebithink/status/1962433602597060975"
+    },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
     //   entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
@@ -471,29 +473,29 @@ document.addEventListener('DOMContentLoaded', function () {
     (trades || getAllTrades()).forEach(t => container.appendChild(createTradeCard(t)));
   };
   // Replace the existing filterTradesForHistory function with this one
-window.filterTradesForHistory = function (days, from, to) {
-  let trades = getAllTrades();
-  
-  if (days) {
-    const cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - days);
-    trades = trades.filter(t => new Date(t.date) >= cutoff);
-  }
-  
-  // Fix date filtering to handle the date string format properly
-  if (from) {
-    const fromDate = new Date(from);
-    trades = trades.filter(t => new Date(t.date) >= fromDate);
-  }
-  
-  if (to) {
-    const toDate = new Date(to);
-    toDate.setHours(23, 59, 59, 999); // Include the entire end day
-    trades = trades.filter(t => new Date(t.date) <= toDate);
-  }
-  
-  return trades.sort((a, b) => new Date(b.date) - new Date(a.date));
-};
+  window.filterTradesForHistory = function (days, from, to) {
+    let trades = getAllTrades();
+
+    if (days) {
+      const cutoff = new Date();
+      cutoff.setDate(cutoff.getDate() - days);
+      trades = trades.filter(t => new Date(t.date) >= cutoff);
+    }
+
+    // Fix date filtering to handle the date string format properly
+    if (from) {
+      const fromDate = new Date(from);
+      trades = trades.filter(t => new Date(t.date) >= fromDate);
+    }
+
+    if (to) {
+      const toDate = new Date(to);
+      toDate.setHours(23, 59, 59, 999); // Include the entire end day
+      trades = trades.filter(t => new Date(t.date) <= toDate);
+    }
+
+    return trades.sort((a, b) => new Date(b.date) - new Date(a.date));
+  };
 
   // ===== EmailJS =====
   function showToast(message, type = "success") {
@@ -533,86 +535,86 @@ window.filterTradesForHistory = function (days, from, to) {
 });
 
 const blogPosts = [
-    {
-        id: '001',
-        title: 'Market Dump is Coming?',
-        description: 'I’m hunting a BIG short on $BTC?',
-        link: 'https://x.com/areebithink/status/1957904824881844492',
-        date: '2025-08-20'
-    },{
-        id: '002',
-        title: 'What are interest rates?',
-        description: 'Why rate cuts pump markets?',
-        link: 'https://x.com/areebithink/status/1958912818545312010',
-        date: '2025-08-22'
-    },
-    {
-        id: '003',
-        title: 'Why did markets pump?',
-        description: 'Mainly 2 news - Chair Powell Speech - Canada: Removing tariffs.',
-        link: 'https://x.com/areebithink/status/1958911930992926934',
-        date: '2025-08-22'
-    },
-    {
-        id: '004',
-        title: 'Before Powell Speech Analysis',
-        description: 'Why Powell Speech can impact markets.',
-        link: 'https://x.com/areebithink/status/1958859104442777896',
-        date: '2025-08-22'
-    },
-    {
-        id: '005',
-        title: 'Market Analysis: What Traders Need to Know',
-        description: 'Market Trend and What i am doing now.',
-        link: 'https://x.com/areebithink/status/1958618691823600126',
-        date: '2025-08-22'
-    },
-    {
-        id: '006',
-        title: 'Next Week Market Plan',
-        description: 'Most likely case: A strong pump continue.',
-        link: 'https://x.com/areebithink/status/1959692233403408702',
-        date: '2025-08-25'
-    },
-    {
-        id: '007',
-        title: 'Bitcoin Market Update',
-        description: 'Deeper dump possible but Longs still play out?',
-        link: 'https://x.com/areebithink/status/1959710183757852908',
-        date: '2025-08-25'
-    },
-    {
-        id: '008',
-        title: 'Alarming BITCOIN Update',
-        description: 'BTC closes below $110K, then it’s alarming?',
-        link: 'https://x.com/areebithink/status/1959823666155548743',
-        date: '2025-08-25'
-    },
-    {
-        id: '009',
-        title: 'BTC Levels & Trend',
-        description: 'BTC facing resistance? Bitcoin may dip to $110,452?.',
-        link: 'https://x.com/areebithink/status/1960538888319152282',
-        date: '2025-08-27'
-    },
-    {
-        id: '010',
-        title: '🇵🇰 Biggest Crypto News',
-        description: 'PVARA held its 1st board meeting with FM, SBP, SECP, FBR & PCC.',
-        link: 'https://x.com/areebithink/status/1960546781818921383',
-        date: '2025-08-27'
-    },
-    {
-        id: '011',
-        title: 'NVIDIA earnings Report',
-        description: 'Growth is booming without China.',
-        link: 'https://x.com/areebithink/status/1960818698765394275',
-        date: '2025-08-28'
-    }
+  {
+    id: '001',
+    title: 'Market Dump is Coming?',
+    description: 'I’m hunting a BIG short on $BTC?',
+    link: 'https://x.com/areebithink/status/1957904824881844492',
+    date: '2025-08-20'
+  }, {
+    id: '002',
+    title: 'What are interest rates?',
+    description: 'Why rate cuts pump markets?',
+    link: 'https://x.com/areebithink/status/1958912818545312010',
+    date: '2025-08-22'
+  },
+  {
+    id: '003',
+    title: 'Why did markets pump?',
+    description: 'Mainly 2 news - Chair Powell Speech - Canada: Removing tariffs.',
+    link: 'https://x.com/areebithink/status/1958911930992926934',
+    date: '2025-08-22'
+  },
+  {
+    id: '004',
+    title: 'Before Powell Speech Analysis',
+    description: 'Why Powell Speech can impact markets.',
+    link: 'https://x.com/areebithink/status/1958859104442777896',
+    date: '2025-08-22'
+  },
+  {
+    id: '005',
+    title: 'Market Analysis: What Traders Need to Know',
+    description: 'Market Trend and What i am doing now.',
+    link: 'https://x.com/areebithink/status/1958618691823600126',
+    date: '2025-08-22'
+  },
+  {
+    id: '006',
+    title: 'Next Week Market Plan',
+    description: 'Most likely case: A strong pump continue.',
+    link: 'https://x.com/areebithink/status/1959692233403408702',
+    date: '2025-08-25'
+  },
+  {
+    id: '007',
+    title: 'Bitcoin Market Update',
+    description: 'Deeper dump possible but Longs still play out?',
+    link: 'https://x.com/areebithink/status/1959710183757852908',
+    date: '2025-08-25'
+  },
+  {
+    id: '008',
+    title: 'Alarming BITCOIN Update',
+    description: 'BTC closes below $110K, then it’s alarming?',
+    link: 'https://x.com/areebithink/status/1959823666155548743',
+    date: '2025-08-25'
+  },
+  {
+    id: '009',
+    title: 'BTC Levels & Trend',
+    description: 'BTC facing resistance? Bitcoin may dip to $110,452?.',
+    link: 'https://x.com/areebithink/status/1960538888319152282',
+    date: '2025-08-27'
+  },
+  {
+    id: '010',
+    title: '🇵🇰 Biggest Crypto News',
+    description: 'PVARA held its 1st board meeting with FM, SBP, SECP, FBR & PCC.',
+    link: 'https://x.com/areebithink/status/1960546781818921383',
+    date: '2025-08-27'
+  },
+  {
+    id: '011',
+    title: 'NVIDIA earnings Report',
+    description: 'Growth is booming without China.',
+    link: 'https://x.com/areebithink/status/1960818698765394275',
+    date: '2025-08-28'
+  }
 ];
 
 function createBlogPostCard(post) {
-    return `
+  return `
         <div class="blog-card">
             <h3>${post.title}</h3>
             <p>${post.description}</p>
@@ -623,55 +625,55 @@ function createBlogPostCard(post) {
 }
 
 function loadBlogPosts() {
-    const latestBlogContainer = document.getElementById('latestBlogPosts');
-    const fullBlogContainer = document.getElementById('fullBlogLogs');
+  const latestBlogContainer = document.getElementById('latestBlogPosts');
+  const fullBlogContainer = document.getElementById('fullBlogLogs');
 
-    // Check if we are on the main page
-    if (latestBlogContainer) {
-        // Sort to show newest first for the main page preview
-        const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
-        const latestSix = sortedPosts.slice(0, 6);
-        latestBlogContainer.innerHTML = latestSix.map(createBlogPostCard).join('');
+  // Check if we are on the main page
+  if (latestBlogContainer) {
+    // Sort to show newest first for the main page preview
+    const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const latestSix = sortedPosts.slice(0, 6);
+    latestBlogContainer.innerHTML = latestSix.map(createBlogPostCard).join('');
+  }
+
+  // Check if we are on the market history page
+  if (fullBlogContainer) {
+    const searchInput = document.getElementById('searchInput');
+    const sortSelect = document.getElementById('sortSelect');
+    const noResultsMessage = document.getElementById('noResults');
+
+    let currentPosts = [...blogPosts];
+
+    function renderPosts() {
+      const query = searchInput.value.toLowerCase();
+      const sortValue = sortSelect.value;
+
+      let filteredPosts = currentPosts.filter(post =>
+        post.title.toLowerCase().includes(query)
+      );
+
+      if (sortValue === 'newest') {
+        filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+      } else if (sortValue === 'oldest') {
+        filteredPosts.sort((a, b) => new Date(a.date) - new Date(b.date));
+      }
+
+      if (filteredPosts.length === 0) {
+        fullBlogContainer.innerHTML = '';
+        noResultsMessage.classList.remove('hidden');
+      } else {
+        fullBlogContainer.innerHTML = filteredPosts.map(createBlogPostCard).join('');
+        noResultsMessage.classList.add('hidden');
+      }
     }
 
-    // Check if we are on the market history page
-    if (fullBlogContainer) {
-        const searchInput = document.getElementById('searchInput');
-        const sortSelect = document.getElementById('sortSelect');
-        const noResultsMessage = document.getElementById('noResults');
+    // Initial render
+    renderPosts();
 
-        let currentPosts = [...blogPosts];
-
-        function renderPosts() {
-            const query = searchInput.value.toLowerCase();
-            const sortValue = sortSelect.value;
-
-            let filteredPosts = currentPosts.filter(post =>
-                post.title.toLowerCase().includes(query)
-            );
-
-            if (sortValue === 'newest') {
-                filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-            } else if (sortValue === 'oldest') {
-                filteredPosts.sort((a, b) => new Date(a.date) - new Date(b.date));
-            }
-
-            if (filteredPosts.length === 0) {
-                fullBlogContainer.innerHTML = '';
-                noResultsMessage.classList.remove('hidden');
-            } else {
-                fullBlogContainer.innerHTML = filteredPosts.map(createBlogPostCard).join('');
-                noResultsMessage.classList.add('hidden');
-            }
-        }
-
-        // Initial render
-        renderPosts();
-
-        // Event listeners for search and sort
-        searchInput.addEventListener('input', renderPosts);
-        sortSelect.addEventListener('change', renderPosts);
-    }
+    // Event listeners for search and sort
+    searchInput.addEventListener('input', renderPosts);
+    sortSelect.addEventListener('change', renderPosts);
+  }
 }
 
 // Call the function when the page loads
