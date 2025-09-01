@@ -535,26 +535,72 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   }
 
-  if (contactForm) {
-    emailjs.init("W4uW5W1uxMSppo-Ax");
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contactForm");
+    const toast = document.getElementById("toast");
 
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
+    // Initialize EmailJS
+    if (contactForm) {
+      emailjs.init("W4uW5W1uxMSppo-Ax");
 
-      emailjs.send("service_skahe8c", "template_apf9avc", {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        service: document.getElementById("service").value,
-        message: document.getElementById("message").value
-      }).then(() => {
-        showToast("✅ Message sent successfully!", "success");
-        contactForm.reset();
-      }, (error) => {
-        console.error("EmailJS error:", error);
-        showToast("❌ Failed to send message. Try again.", "error");
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Collect form data
+        const formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          service: document.getElementById("service").value,
+          message: document.getElementById("message").value
+        };
+
+        // Send the email
+        emailjs.send("service_skahe8c", "template_apf9avc", formData)
+          .then(() => {
+            showToast("✅ Message sent successfully!", "success");
+            contactForm.reset();
+          }, (error) => {
+            console.error("EmailJS error:", error);
+            showToast("❌ Failed to send message. Please try again.", "error");
+          });
       });
-    });
-  }
+    }
+
+    function showToast(message, type) {
+      toast.textContent = message;
+      toast.className = `toast show ${type}`;
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+
+    // Additional functionality can go here (e.g., theme toggle, mobile menu)
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    }
+
+    // Theme toggle
+    const themeToggle = document.querySelector(".theme-toggle");
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        // Optionally save the preference to localStorage
+        const isLightMode = document.body.classList.contains("light-mode");
+        localStorage.setItem("theme", isLightMode ? "light" : "dark");
+      });
+    }
+
+    // Load theme from localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+      document.body.classList.add("light-mode");
+    }
+  });
 
 
   // ===== Expose Portfolio =====

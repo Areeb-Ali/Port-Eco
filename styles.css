@@ -701,3 +701,52 @@ Reduce gap between ticker and hero section on mobile screens
     display: none;
   }
 }
+
+/* --- Partnership Page Styles --- */
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.partner-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner-card:hover {
+    transform: translateY(-6px);
+}
+
+.partner-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.partner-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.partner-card p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.partner-card .btn {
+    margin-top: auto; /* Pushes the button to the bottom */
+}
+
+/* Make sure this is in your css file if it's not already */
+.page-content {
+    padding-top: calc(var(--nav-height) + var(--ticker-height) + 1.5rem);
+}
