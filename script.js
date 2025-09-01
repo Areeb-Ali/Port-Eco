@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "ETHUSDT short",
-      symbol: "ETHUSDT",
-      entry: 4475.99, tp: 4376.66, sl: 4497.57,
-      date: "2025-08-28", outcome: "running",
-      proof: "https://x.com/areebithink/status/1962431641768378506"
-    },
+    // {
+    //   id: "RUN-001", title: "ETHUSDT short",
+    //   symbol: "ETHUSDT",
+    //   entry: 4475.99, tp: 4376.66, sl: 4497.57,
+    //   date: "2025-08-28", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1962431641768378506"
+    // },
     {
       id: "RUN-002", title: "BTCUSDT short",
       symbol: "BTCUSDT",
@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-29", outcome: "running",
       proof: "https://x.com/areebithink/status/1962431641768378506"
     },
-    {
-      id: "RUN-003", title: "FETUSDT short",
-      symbol: "FETUSDT",
-      entry: 0.6159, tp: 0.601, sl: 0.6214,
-      date: "2025-08-27", outcome: "running",
-      proof: "https://x.com/areebithink/status/1962433602597060975"
-    },
+    // {
+    //   id: "RUN-003", title: "FETUSDT short",
+    //   symbol: "FETUSDT",
+    //   entry: 0.6159, tp: 0.601, sl: 0.6214,
+    //   date: "2025-08-27", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1962433602597060975"
+    // },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
     //   entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
@@ -328,6 +328,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-08-31",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1961524742688838009"
+    },
+    {
+      id: "REC-031",
+      title: "ETH Short",
+      symbol: "ETHUSDT",
+      entry: 4475.99, tp: 4376.66, sl: 4497.57,
+      date: "2025-09-1",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962431641768378506"
+    },
+    {
+      id: "REC-032",
+      title: "FET Short",
+      symbol: "FETUSDT",
+      entry: 0.6159, tp: 0.601, sl: 0.6214,
+      date: "2025-09-1",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962433602597060975"
     }
   ];
 
