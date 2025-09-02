@@ -355,6 +355,33 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-2",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1962431641768378506"
+    },
+    {
+      id: "REC-034",
+      title: "ETH Short",
+      symbol: "ETHUSDT",
+      entry: 4328.99, tp: 4289.53, sl: 4358.13,
+      date: "2025-09-2",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962857264072581575"
+    },
+    {
+      id: "REC-035",
+      title: "SOL Short",
+      symbol: "SOLUSDT",
+      entry: 200.46, tp: 198.98, sl: 203.6,
+      date: "2025-09-2",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962857743867342879"
+    },
+    {
+      id: "REC-036",
+      title: "ADA Short",
+      symbol: "ADAUSDT",
+      entry: 0.8129, tp: 0.8052, sl: 0.8197,
+      date: "2025-09-2",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962858494664618458"
     }
   ];
 
