@@ -540,31 +540,49 @@ document.addEventListener('DOMContentLoaded', function () {
     const toast = document.getElementById("toast");
 
     // Initialize EmailJS
-    if (contactForm) {
-      emailjs.init("W4uW5W1uxMSppo-Ax");
+    // ===== EmailJS Contact Form =====
+    // if (contactForm) {
+    //   emailjs.init("W4uW5W1uxMSppo-Ax"); // Replace with your EmailJS Public Key
 
-      contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+    //   contactForm.addEventListener("submit", function (e) {
+    //     e.preventDefault();
 
-        // Collect form data
-        const formData = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          service: document.getElementById("service").value,
-          message: document.getElementById("message").value
-        };
+    //     const serviceID = "service_skahe8c";  // Replace with EmailJS Service ID
+    //     const templateID = "template_apf9avc"; // Replace with EmailJS Template ID
 
-        // Send the email
-        emailjs.send("service_skahe8c", "template_apf9avc", formData)
-          .then(() => {
-            showToast("✅ Message sent successfully!", "success");
-            contactForm.reset();
-          }, (error) => {
-            console.error("EmailJS error:", error);
-            showToast("❌ Failed to send message. Please try again.", "error");
-          });
-      });
-    }
+    //     // Collect form data
+    //     const templateParams = {
+    //       name: document.getElementById("name").value,
+    //       email: document.getElementById("email").value,
+    //       service: document.getElementById("service").value,
+    //       message: document.getElementById("message").value,
+    //     };
+
+    //     emailjs.send(serviceID, templateID, templateParams)
+    //       .then(() => {
+    //         showToast("✅ Message sent successfully!");
+    //         contactForm.reset();
+    //       })
+    //       .catch((err) => {
+    //         console.error("EmailJS Error:", err);
+    //         showToast("❌ Failed to send message. Try again later.");
+    //       });
+    //   });
+    // }
+
+    // // ===== Toast Notifications =====
+    // function showToast(message) {
+    //   const toast = document.getElementById("toast");
+    //   toast.textContent = message;
+    //   toast.classList.remove("hidden");
+    //   toast.classList.add("show");
+
+    //   setTimeout(() => {
+    //     toast.classList.remove("show");
+    //     toast.classList.add("hidden");
+    //   }, 3000);
+    // }
+
 
     function showToast(message, type) {
       toast.textContent = message;
