@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
     //   date: "2025-08-28", outcome: "running",
     //   proof: "https://x.com/areebithink/status/1962431641768378506"
     // },
-    // {
-    //   id: "RUN-002", title: "BTCUSDT short",
-    //   symbol: "BTCUSDT",
-    //   entry: 109599.9, tp: 107856.3, sl: 110085.6,
-    //   date: "2025-08-29", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1962431641768378506"
-    // },
+    {
+      id: "RUN-002", title: "BTCUSDT Long",
+      symbol: "BTCUSDT",
+      entry: 110470, tp: 112031, sl: 110085.6,
+      date: "2025-09-2", outcome: "running",
+      proof: "https://x.com/areebithink/status/1962951365401227652"
+    },
     // {
     //   id: "RUN-003", title: "FETUSDT short",
     //   symbol: "FETUSDT",
@@ -382,6 +382,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-2",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1962858494664618458"
+    },
+    {
+      id: "REC-037",
+      title: "XRP Long",
+      symbol: "XRPUSDT",
+      entry: 2.7979, tp: 2.8536, sl: 2.78,
+      date: "2025-09-3",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962926852655169695"
+    },
+    {
+      id: "REC-038",
+      title: "FET Long",
+      symbol: "FETUSDT",
+      entry: 0.6, tp: 0.6111, sl: 0.5955,
+      date: "2025-09-3",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962926852655169695"
     }
   ];
 
