@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "ETHUSDT short",
-    //   symbol: "ETHUSDT",
-    //   entry: 4475.99, tp: 4376.66, sl: 4497.57,
-    //   date: "2025-08-28", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1962431641768378506"
-    // },
-    // {
-    //   id: "RUN-002", title: "BTCUSDT Long",
-    //   symbol: "BTCUSDT",
-    //   entry: 110470, tp: 112031, sl: 110085.6,
-    //   date: "2025-09-2", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1962951365401227652"
-    // },
+    {
+      id: "RUN-001", title: "ETHUSDT Short",
+      symbol: "ETHUSDT",
+      entry: 4463.72, tp: 4376.66, sl: 0,
+      date: "2025-08-28", outcome: "running",
+      proof: "https://x.com/areebithink/status/1962431641768378506"
+    },
+    {
+      id: "RUN-002", title: "ENSUSDT short",
+      symbol: "ENSUSDT",
+      entry: 23.183, tp: 22.226, sl: 0,
+      date: "2025-09-2", outcome: "running",
+      proof: "https://x.com/areebithink/status/1962951365401227652"
+    },
     // {
     //   id: "RUN-003", title: "FETUSDT short",
     //   symbol: "FETUSDT",
