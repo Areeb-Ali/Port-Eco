@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
     //   date: "2025-08-28", outcome: "running",
     //   proof: "https://x.com/areebithink/status/1962431641768378506"
     // },
-    {
-      id: "RUN-002", title: "BTCUSDT Long",
-      symbol: "BTCUSDT",
-      entry: 110470, tp: 112031, sl: 110085.6,
-      date: "2025-09-2", outcome: "running",
-      proof: "https://x.com/areebithink/status/1962951365401227652"
-    },
+    // {
+    //   id: "RUN-002", title: "BTCUSDT Long",
+    //   symbol: "BTCUSDT",
+    //   entry: 110470, tp: 112031, sl: 110085.6,
+    //   date: "2025-09-2", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1962951365401227652"
+    // },
     // {
     //   id: "RUN-003", title: "FETUSDT short",
     //   symbol: "FETUSDT",
@@ -400,6 +400,42 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-3",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1962926852655169695"
+    },
+    {
+      id: "REC-039",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 110470, tp: 112031, sl: 110085.6,
+      date: "2025-09-3",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962951365401227652"
+    },
+    {
+      id: "REC-039",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 110470, tp: 112031, sl: 110085.6,
+      date: "2025-09-3",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1962951365401227652"
+    },
+    {
+      id: "REC-039",
+      title: "NEAR Long",
+      symbol: "NEARUSDT",
+      entry: 2.431, tp: 2.473, sl: 2.417,
+      date: "2025-09-3",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1963132384318218590"
+    },
+    {
+      id: "REC-040",
+      title: "FET Long",
+      symbol: "FETUSDT",
+      entry: 0.6162, tp: 0.6256, sl: 0.6125,
+      date: "2025-09-3",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1963147566872461319"
     }
   ];
 
