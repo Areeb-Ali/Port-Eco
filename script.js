@@ -411,16 +411,7 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1962951365401227652"
     },
     {
-      id: "REC-039",
-      title: "BTC Long",
-      symbol: "BTCUSDT",
-      entry: 110470, tp: 112031, sl: 110085.6,
-      date: "2025-09-3",
-      outcome: "win",
-      proof: "https://x.com/areebithink/status/1962951365401227652"
-    },
-    {
-      id: "REC-039",
+      id: "REC-040",
       title: "NEAR Long",
       symbol: "NEARUSDT",
       entry: 2.431, tp: 2.473, sl: 2.417,
@@ -429,7 +420,7 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1963132384318218590"
     },
     {
-      id: "REC-040",
+      id: "REC-041",
       title: "FET Long",
       symbol: "FETUSDT",
       entry: 0.6162, tp: 0.6256, sl: 0.6125,
