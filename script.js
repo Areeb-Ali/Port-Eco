@@ -13,26 +13,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
+    {
+      id: "RUN-001", title: "ETHUSDT Long",
+      symbol: "ETHUSDT",
+      entry: 4468.24, tp: 4456.67, sl: 0,
+      date: "2025-09-04", outcome: "running",
+      proof: "https://x.com/areebithink/status/1963514457944199245"
+    },
+    {
+      id: "RUN-002", title: "LISTAUSDT Long",
+      symbol: "LISTAUSDT",
+      entry: 0.243, tp: 0.257, sl: 0,
+      date: "2025-09-4", outcome: "running",
+      proof: "https://x.com/areebithink/status/1963576051834991042"
+    },
     // {
-    //   id: "RUN-001", title: "ETHUSDT Short",
-    //   symbol: "ETHUSDT",
-    //   entry: 4463.72, tp: 4376.66, sl: 0,
-    //   date: "2025-08-28", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1962431641768378506"
-    // },
-    // {
-    //   id: "RUN-002", title: "ENSUSDT short",
-    //   symbol: "ENSUSDT",
-    //   entry: 23.183, tp: 22.226, sl: 0,
-    //   date: "2025-09-2", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1962951365401227652"
-    // },
-    // {
-    //   id: "RUN-003", title: "FETUSDT short",
-    //   symbol: "FETUSDT",
+    //   id: "RUN-003", title: "ADAUSDT Long",
+    //   symbol: "ADAUSDT",
     //   entry: 0.6159, tp: 0.601, sl: 0.6214,
     //   date: "2025-08-27", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1962433602597060975"
+    //   proof: "https://x.com/areebithink/status/1963514457944199245"
     // },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
@@ -445,6 +445,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-4",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1963256644911124896"
+    },
+    {
+      id: "REC-044",
+      title: "ADA Long",
+      symbol: "ADAUSDT",
+      entry: 0.8115, tp: 0.8161, sl: 0,
+      date: "2025-09-5",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1963514457944199245"
+    },
+    {
+      id: "REC-045",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 110425, tp: 112150, sl: 109600,
+      date: "2025-09-5",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1963514457944199245"
     }
   ];
 
