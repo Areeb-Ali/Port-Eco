@@ -13,17 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "ETHUSDT Long",
-      symbol: "ETHUSDT",
-      entry: 4468.24, tp: 4456.67, sl: 0,
-      date: "2025-09-04", outcome: "running",
-      proof: "https://x.com/areebithink/status/1963514457944199245"
-    },
+    // {
+    //   id: "RUN-001", title: "ETHUSDT Long",
+    //   symbol: "ETHUSDT",
+    //   entry: 4468.24, tp: 4456.67, sl: 0,
+    //   date: "2025-09-04", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1963514457944199245"
+    // },
     {
       id: "RUN-002", title: "LISTAUSDT Long",
       symbol: "LISTAUSDT",
-      entry: 0.243, tp: 0.257, sl: 0,
+      entry: 0.243, tp: 0.257, sl: 0.2330,
       date: "2025-09-4", outcome: "running",
       proof: "https://x.com/areebithink/status/1963576051834991042"
     },
@@ -460,6 +460,15 @@ document.addEventListener('DOMContentLoaded', function () {
       title: "BTC Long",
       symbol: "BTCUSDT",
       entry: 110425, tp: 112150, sl: 109600,
+      date: "2025-09-5",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1963514457944199245"
+    },
+    {
+      id: "REC-046",
+      title: "ETH Long",
+      symbol: "ETHUSDT",
+      entry: 4468.24, tp: 4456.67, sl: 4250,      
       date: "2025-09-5",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1963514457944199245"
