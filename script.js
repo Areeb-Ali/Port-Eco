@@ -818,6 +818,13 @@ const blogPosts = [
     description: 'Growth is booming without China.',
     link: 'https://x.com/areebithink/status/1960818698765394275',
     date: '2025-08-28'
+  },
+  {
+    id: '012',
+    title: 'The reason for the market pump',
+    description: 'A significant miss like this signals a slowing job market, which increases the likelihood of a more dovish stance from the Fed.',
+    link: 'https://x.com/areebithink/status/1963962226458382683',
+    date: '2025-09-05'
   }
 ];
 
