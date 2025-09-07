@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "ETHUSDT Long",
-    //   symbol: "ETHUSDT",
-    //   entry: 4468.24, tp: 4456.67, sl: 0,
-    //   date: "2025-09-04", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1963514457944199245"
-    // },
     {
-      id: "RUN-002", title: "LISTAUSDT Long",
-      symbol: "LISTAUSDT",
-      entry: 0.243, tp: 0.257, sl: 0.2330,
-      date: "2025-09-4", outcome: "running",
-      proof: "https://x.com/areebithink/status/1963576051834991042"
+      id: "RUN-001", title: "BTCUSDT Long",
+      symbol: "BTCUSDT",
+      entry: 110588.7, tp: 112147, sl: 0,
+      date: "2025-09-06", outcome: "running",
+      proof: "https://x.com/areebithink/status/1964090883810480300"
+    },
+    {
+      id: "RUN-002", title: "BEAMXUSDT Long",
+      symbol: "BEAMXUSDT",
+      entry: 0.007051, tp: 0.00706, sl: 0,
+      date: "2025-09-6", outcome: "running",
+      proof: "https://x.com/areebithink/status/1964090883810480300"
     },
     // {
     //   id: "RUN-003", title: "ADAUSDT Long",
@@ -472,6 +472,33 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-5",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1963514457944199245"
+    },
+    {
+      id: "REC-047",
+      title: "LISTA Long",
+      symbol: "LISTAUSDT",
+      entry: 0.243, tp: 0.2529, sl: 0.2372,      
+      date: "2025-09-5",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1963576051834991042"
+    },
+    {
+      id: "REC-048",
+      title: "FET Long",
+      symbol: "FETUSDT",
+      entry: 0.6093, tp: 0.6299, sl: 0,      
+      date: "2025-09-5",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1963976197798572137"
+    },
+    {
+      id: "REC-049",
+      title: "SUI Long",
+      symbol: "SUIUSDT",
+      entry: 3.3778, tp: 3.3999, sl: 0,      
+      date: "2025-09-6",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1963976197798572137"
     }
   ];
 
