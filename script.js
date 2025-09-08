@@ -13,27 +13,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
+      {
+        id: "RUN-001", title: "ADAUSDT Short",
+        symbol: "ADAUSDT",
+        entry: 0.852, tp: 0, sl: 0,
+        date: "2025-09-08", outcome: "running",
+        proof: "https://x.com/areebithink/status/1964987409134977117"
+      },
+      {
+        id: "RUN-002", title: "BTCUSDT Short",
+        symbol: "BTCUSDT",
+        entry: 112034, tp: 0, sl: 0,
+        date: "2025-09-8", outcome: "running",
+        proof: "https://x.com/areebithink/status/1965028612454953363"
+      },
     {
-      id: "RUN-001", title: "BTCUSDT Long",
-      symbol: "BTCUSDT",
-      entry: 110588.7, tp: 112147, sl: 0,
-      date: "2025-09-06", outcome: "running",
-      proof: "https://x.com/areebithink/status/1964090883810480300"
+      id: "RUN-003", title: "XRPUSDT Short",
+      symbol: "XRPUSDT",
+      entry: 2.9529, tp: 0, sl: 0,
+      date: "2025-09-08", outcome: "running",
+      proof: "https://x.com/areebithink/status/1965030926938984616"
     },
-    {
-      id: "RUN-002", title: "BEAMXUSDT Long",
-      symbol: "BEAMXUSDT",
-      entry: 0.007051, tp: 0.00706, sl: 0,
-      date: "2025-09-6", outcome: "running",
-      proof: "https://x.com/areebithink/status/1964090883810480300"
-    },
-    // {
-    //   id: "RUN-003", title: "ADAUSDT Long",
-    //   symbol: "ADAUSDT",
-    //   entry: 0.6159, tp: 0.601, sl: 0.6214,
-    //   date: "2025-08-27", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1963514457944199245"
-    // },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
     //   entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
@@ -499,6 +499,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-6",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1963976197798572137"
+    },
+    {
+      id: "REC-050",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 110588.7, tp: 112147, sl: 0,      
+      date: "2025-09-8",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1964090883810480300"
+    },
+    {
+      id: "REC-051",
+      title: "BEAMX Long",
+      symbol: "BEAMXUSDT",
+      entry: 0.007051, tp: 0.00706, sl: 0,      
+      date: "2025-09-8",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1964090883810480300"
     }
   ];
 
