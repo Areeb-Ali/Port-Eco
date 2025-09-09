@@ -14,25 +14,25 @@ document.addEventListener('DOMContentLoaded', function () {
   // ===== Sample Trades =====
   const runningTrades = [
     {
-      id: "RUN-001", title: "ADAUSDT Short",
+      id: "RUN-001", title: "ADAUSDT Long",
       symbol: "ADAUSDT",
-      entry: 0.852, tp: 0, sl: 0,
-      date: "2025-09-08", outcome: "running",
-      proof: "https://x.com/areebithink/status/1964987409134977117"
+      entry: 0.8591, tp: 0.8724, sl: 0,
+      date: "2025-09-09", outcome: "running",
+      proof: "https://x.com/areebithink/status/1965446861231456491"
     },
     {
-      id: "RUN-002", title: "BTCUSDT Short",
-      symbol: "BTCUSDT",
-      entry: 112034, tp: 0, sl: 0,
-      date: "2025-09-8", outcome: "running",
-      proof: "https://x.com/areebithink/status/1965028612454953363"
-    },
-    {
-      id: "RUN-003", title: "XRPUSDT Short",
+      id: "RUN-002", title: "XRPUSDT Long",
       symbol: "XRPUSDT",
-      entry: 2.9529, tp: 0, sl: 0,
-      date: "2025-09-08", outcome: "running",
-      proof: "https://x.com/areebithink/status/1965030926938984616"
+      entry: 2.952, tp: 3.002, sl: 0,
+      date: "2025-09-9", outcome: "running",
+      proof: "https://x.com/areebithink/status/1965446861231456491"
+    },
+    {
+      id: "RUN-003", title: "FETSDT Long",
+      symbol: "FETUSDT",
+      entry: 0.6463, tp: 0.6619, sl: 0,
+      date: "2025-09-09", outcome: "running",
+      proof: "https://x.com/areebithink/status/1965446861231456491"
     },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
@@ -517,6 +517,33 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-8",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1964090883810480300"
+    },
+    {
+      id: "REC-052",
+      title: "ADA Short",
+      symbol: "ADAUSDT",
+      entry: 0.8589, tp: 0.8063, sl: 0,
+      date: "2025-09-9",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1964987409134977117"
+    },
+    {
+      id: "REC-053",
+      title: "BTC Short",
+      symbol: "BTCUSDT",
+      entry: 112034, tp: 111501, sl: 0,
+      date: "2025-09-9",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1965028612454953363"
+    },
+    {
+      id: "REC-054",
+      title: "XRP Short",
+      symbol: "XRPUSDT",
+      entry: 2.9722, tp: 2.8754, sl: 0,
+      date: "2025-09-9",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1965030926938984616"
     }
   ];
 
