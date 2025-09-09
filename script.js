@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-      {
-        id: "RUN-001", title: "ADAUSDT Short",
-        symbol: "ADAUSDT",
-        entry: 0.852, tp: 0, sl: 0,
-        date: "2025-09-08", outcome: "running",
-        proof: "https://x.com/areebithink/status/1964987409134977117"
-      },
-      {
-        id: "RUN-002", title: "BTCUSDT Short",
-        symbol: "BTCUSDT",
-        entry: 112034, tp: 0, sl: 0,
-        date: "2025-09-8", outcome: "running",
-        proof: "https://x.com/areebithink/status/1965028612454953363"
-      },
+    {
+      id: "RUN-001", title: "ADAUSDT Short",
+      symbol: "ADAUSDT",
+      entry: 0.852, tp: 0, sl: 0,
+      date: "2025-09-08", outcome: "running",
+      proof: "https://x.com/areebithink/status/1964987409134977117"
+    },
+    {
+      id: "RUN-002", title: "BTCUSDT Short",
+      symbol: "BTCUSDT",
+      entry: 112034, tp: 0, sl: 0,
+      date: "2025-09-8", outcome: "running",
+      proof: "https://x.com/areebithink/status/1965028612454953363"
+    },
     {
       id: "RUN-003", title: "XRPUSDT Short",
       symbol: "XRPUSDT",
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-046",
       title: "ETH Long",
       symbol: "ETHUSDT",
-      entry: 4468.24, tp: 4456.67, sl: 4250,      
+      entry: 4468.24, tp: 4456.67, sl: 4250,
       date: "2025-09-5",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1963514457944199245"
@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-047",
       title: "LISTA Long",
       symbol: "LISTAUSDT",
-      entry: 0.243, tp: 0.2529, sl: 0.2372,      
+      entry: 0.243, tp: 0.2529, sl: 0.2372,
       date: "2025-09-5",
       outcome: "breakeven",
       proof: "https://x.com/areebithink/status/1963576051834991042"
@@ -486,7 +486,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-048",
       title: "FET Long",
       symbol: "FETUSDT",
-      entry: 0.6093, tp: 0.6299, sl: 0,      
+      entry: 0.6093, tp: 0.6299, sl: 0,
       date: "2025-09-5",
       outcome: "breakeven",
       proof: "https://x.com/areebithink/status/1963976197798572137"
@@ -495,7 +495,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-049",
       title: "SUI Long",
       symbol: "SUIUSDT",
-      entry: 3.3778, tp: 3.3999, sl: 0,      
+      entry: 3.3778, tp: 3.3999, sl: 0,
       date: "2025-09-6",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1963976197798572137"
@@ -504,7 +504,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-050",
       title: "BTC Long",
       symbol: "BTCUSDT",
-      entry: 110588.7, tp: 112147, sl: 0,      
+      entry: 110588.7, tp: 112147, sl: 0,
       date: "2025-09-8",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1964090883810480300"
@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-051",
       title: "BEAMX Long",
       symbol: "BEAMXUSDT",
-      entry: 0.007051, tp: 0.00706, sl: 0,      
+      entry: 0.007051, tp: 0.00706, sl: 0,
       date: "2025-09-8",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1964090883810480300"
@@ -938,3 +938,302 @@ function loadBlogPosts() {
 
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', loadBlogPosts);
+
+// Add this to a new or existing script.js file
+
+// const weeklyReports = [
+//   {
+//     dateRange: "September 2–9, 2025",
+//     summary: {
+//       totalTrades: 6,
+//       winRate: "67%",
+//       avgRR: 2.3,
+//       netPnL: "+7%",
+//       highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+//     },
+//     performance: [
+//       {
+//         category: "BTC/ETH",
+//         details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries."
+//       },
+//       {
+//         category: "Altcoins",
+//         details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade."
+//       },
+//       {
+//         category: "Indices/Gold",
+//         details: "We didn't take any trades in these markets this week, but we observed continued strength in the dollar index (DXY), which influenced some of the crypto movements."
+//       }
+//     ],
+//     outlook: [
+//       {
+//         asset: "BTC",
+//         details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point. A clear break and retest above this level could lead to a continuation toward $32,000. On the flip side, a rejection here could bring us back to the $28,000 support."
+//       },
+//       {
+//         asset: "ETH",
+//         details: "We're watching the $1,900 level closely. A sustained move above it could signal bullish momentum, while a rejection could offer short opportunities."
+//       },
+//       {
+//         asset: "Altcoins",
+//         details: "Opportunities are likely to be found in altcoins that have shown relative strength while BTC consolidates. We’ll be looking at potential setups in LINK and DOT if they can break their recent resistance levels."
+//       },
+//       {
+//         asset: "Macro",
+//         details: "This week's upcoming CPI data release is a major macro event. A higher-than-expected number could lead to market volatility and a potential pullback in risk assets like crypto."
+//       }
+//     ],
+//     conclusion: "Discipline and patience remain key. The most profitable setups were a result of waiting for high-conviction entries, and our losing trade was a good reminder to always respect our stop-losses. Next week, we’ll be watching the $29,500 level on BTC as a key breakout point."
+//   },
+//   // You can add more report objects here as you create new reports
+//   // {
+//   //     dateRange: "September 10–17, 2025",
+//   //     ...
+//   // }
+// ];
+
+// Data for all weekly reports
+const weeklyReports = [
+    {
+        dateRange: "September 2–9, 2025",
+        summary: {
+            totalTrades: 6,
+            winRate: "67%",
+            avgRR: 2.3,
+            netPnL: "+7%",
+            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+        },
+        performance: [
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+        ],
+        outlook: [
+            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+            { asset: "ETH", details: "We're watching the $1,900 level closely." }
+        ],
+        conclusion: "Discipline and patience remain key."
+    },
+    {
+        dateRange: "September 10–20, 2025",
+        summary: {
+            totalTrades: 6,
+            winRate: "67%",
+            avgRR: 2.3,
+            netPnL: "+7%",
+            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+        },
+        performance: [
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+        ],
+        outlook: [
+            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+            { asset: "ETH", details: "We're watching the $1,900 level closely." }
+        ],
+        conclusion: "Discipline and patience remain key."
+    },
+    {
+        dateRange: "September 21-30, 2025",
+        summary: {
+            totalTrades: 6,
+            winRate: "67%",
+            avgRR: 2.3,
+            netPnL: "+7%",
+            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+        },
+        performance: [
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+        ],
+        outlook: [
+            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+            { asset: "ETH", details: "We're watching the $1,900 level closely." }
+        ],
+        conclusion: "Discipline and patience remain key."
+    },
+    {
+        dateRange: "October 2–9, 2025",
+        summary: {
+            totalTrades: 6,
+            winRate: "67%",
+            avgRR: 2.3,
+            netPnL: "+7%",
+            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+        },
+        performance: [
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+        ],
+        outlook: [
+            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+            { asset: "ETH", details: "We're watching the $1,900 level closely." }
+        ],
+        conclusion: "Discipline and patience remain key."
+    },
+    {
+        dateRange: "Octuber 10–20, 2025",
+        summary: {
+            totalTrades: 6,
+            winRate: "67%",
+            avgRR: 2.3,
+            netPnL: "+7%",
+            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+        },
+        performance: [
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+        ],
+        outlook: [
+            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+            { asset: "ETH", details: "We're watching the $1,900 level closely." }
+        ],
+        conclusion: "Discipline and patience remain key."
+    }
+];
+
+function generateReportHTML(report, index) {
+    let performanceHTML = report.performance.map(p => `<p><strong>${p.category}:</strong> ${p.details}</p>`).join('');
+    let outlookHTML = report.outlook.map(o => `<p><strong>${o.asset}:</strong> ${o.details}</p>`).join('');
+
+    return `
+        <div class="report-card" data-index="${index}">
+            <button class="report-toggle-button">
+                <span>Weekly Market Report – ${report.dateRange}</span>
+                <i class="fas fa-chevron-down report-toggle-icon"></i>
+            </button>
+            <div class="report-content">
+                <h3>📌 Weekly Summary</h3>
+                <div class="summary-metrics">
+                    <div class="metric-item"><strong>${report.summary.totalTrades}</strong> Total Trades Taken</div>
+                    <div class="metric-item"><strong>${report.summary.winRate}</strong> Win Rate</div>
+                    <div class="metric-item"><strong>${report.summary.avgRR}</strong> Avg R/R</div>
+                    <div class="metric-item"><strong>${report.summary.netPnL}</strong> Net Weekly PnL</div>
+                </div>
+                <p class="tagline">${report.summary.highlight}</p>
+                <h3>📈 Performance Overview</h3>
+                ${performanceHTML}
+                <h3>🗓️ Market Outlook (Next Week)</h3>
+                ${outlookHTML}
+                <p>${report.conclusion}</p>
+                <div class="report-actions">
+                    <button class="btn btn-outline download-report-btn" data-index="${index}">
+                        <i class="fas fa-download"></i> Download Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderReports() {
+    const reportContainer = document.getElementById('report-container');
+    if (reportContainer) {
+        const sortedReports = [...weeklyReports].reverse();
+        const allReportsHTML = sortedReports.map((report, index) => generateReportHTML(report, index)).join('');
+        reportContainer.innerHTML = allReportsHTML;
+
+        // Attach event listeners to all toggle and download buttons
+        document.querySelectorAll('.report-toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                toggleReport(button);
+            });
+        });
+
+        document.querySelectorAll('.download-report-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent the card's click event from firing
+                const reportIndex = button.dataset.index;
+                downloadReport(weeklyReports[reportIndex]);
+            });
+        });
+    }
+}
+
+function toggleReport(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.report-toggle-icon');
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.classList.remove('active');
+    } else {
+        document.querySelectorAll('.report-content').forEach(c => c.style.display = "none");
+        document.querySelectorAll('.report-toggle-icon').forEach(i => i.classList.remove('active'));
+
+        content.style.display = "block";
+        icon.classList.add('active');
+    }
+}
+
+function filterReports() {
+    const searchTerm = document.getElementById('reportSearch').value.toLowerCase();
+    const cards = document.querySelectorAll('.report-card');
+    cards.forEach(card => {
+        const dateRange = card.querySelector('span').textContent.toLowerCase();
+        if (dateRange.includes(searchTerm)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+function downloadReport(report) {
+    const element = document.createElement('div');
+    element.innerHTML = `
+        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: relative; padding: 2rem; color: #333; line-height: 1.6;">
+            <div style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                color: rgba(0, 0, 0, 0.1);
+                font-size: 5rem;
+                font-weight: 700;
+                pointer-events: none;
+                user-select: none;
+                white-space: nowrap;
+                z-index: 99;
+            ">
+                BEERALIA
+            </div>
+            <header style="text-align: center; margin-bottom: 2rem;">
+                <h1 style="font-size: 2.5rem; color: #0077b6; margin-bottom: 0.5rem; font-weight: 600;">Official Weekly Report</h1>
+                <h2 style="font-size: 1.5rem; color: #555; font-weight: 400;">${report.dateRange}</h2>
+            </header>
+            <hr style="border: none; border-top: 2px solid #ddd; margin: 2rem 0;">
+            <section style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.5rem; color: #0077b6; margin-bottom: 1rem; border-left: 4px solid #0077b6; padding-left: 10px;">Summary</h3>
+                <p style="font-style: italic; color: #666; font-size: 1rem;">${report.summary.highlight}</p>
+                <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+                    <li style="flex: 1 1 200px; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;"><strong>Total Trades:</strong> ${report.summary.totalTrades}</li>
+                    <li style="flex: 1 1 200px; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;"><strong>Win Rate:</strong> ${report.summary.winRate}</li>
+                    <li style="flex: 1 1 200px; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;"><strong>Avg R/R:</strong> ${report.summary.avgRR}</li>
+                    <li style="flex: 1 1 200px; padding: 1rem; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;"><strong>Net PnL:</strong> ${report.summary.netPnL}</li>
+                </ul>
+            </section>
+            <section style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.5rem; color: #0077b6; margin-bottom: 1rem; border-left: 4px solid #0077b6; padding-left: 10px;">Performance Overview</h3>
+                ${report.performance.map(p => `<p style="margin-bottom: 1rem;"><strong>${p.category}:</strong> ${p.details}</p>`).join('')}
+            </section>
+            <section style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.5rem; color: #0077b6; margin-bottom: 1rem; border-left: 4px solid #0077b6; padding-left: 10px;">Market Outlook (Next Week)</h3>
+                ${report.outlook.map(o => `<p style="margin-bottom: 1rem;"><strong>${o.asset}:</strong> ${o.details}</p>`).join('')}
+            </section>
+            <footer style="text-align: center; font-size: 0.9rem; color: #888; margin-top: 3rem;">
+                <p>${report.conclusion}</p>
+                <p>&copy; 2025 BeeraLia. All rights reserved.</p>
+            </footer>
+        </div>
+    `;
+    const opt = {
+        margin: 1,
+        filename: `Official_Report_${report.dateRange}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+    html2pdf().from(element).set(opt).save();
+}
+
+window.addEventListener('DOMContentLoaded', renderReports);

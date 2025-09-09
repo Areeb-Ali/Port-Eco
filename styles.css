@@ -750,3 +750,218 @@ Reduce gap between ticker and hero section on mobile screens
 .page-content {
     padding-top: calc(var(--nav-height) + var(--ticker-height) + 1.5rem);
 }
+
+/* Add to your existing style.css file */
+
+.hidden { display: none; }
+
+.report-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.report-header p {
+    opacity: 0.8;
+}
+
+.report-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.report-card h3 {
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.summary-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.metric-item {
+    background: rgba(var(--accent-color-rgb), 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.metric-item strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: var(--accent-color);
+}
+
+/* Make sure to use the correct classes from your existing CSS for text and buttons */
+
+/* Add to your existing style.css file */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.section-description {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.report-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.report-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.report-card h3 {
+    color: var(--accent-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(var(--accent-color-rgb), 0.2);
+}
+
+.summary-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.metric-item {
+    background: rgba(var(--accent-color-rgb), 0.07);
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--accent-color-rgb), 0.15);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.metric-item strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.report-toggle-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.report-toggle-btn.active {
+    transform: rotate(180deg);
+}
+
+.report-content {
+    display: none;
+    margin-top: 1rem;
+}
+
+/* For the dropdown functionality using a button */
+.report-toggle-button {
+    background: rgba(var(--accent-color-rgb), 0.1);
+    color: var(--accent-color);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border: none;
+}
+
+.report-toggle-button:hover {
+    background: rgba(var(--accent-color-rgb), 0.2);
+}
+
+/* Add to your existing style.css file */
+
+.report-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#reportSearch {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.2s ease;
+}
+
+#reportSearch:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.report-card.selected {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 15px rgba(var(--accent-color-rgb), 0.5);
+}
+
+/* Watermark styles for PDF export */
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: rgba(128, 128, 128, 0.2);
+    font-size: 4rem;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* Add this to your styles.css */
+.report-actions {
+    margin-top: 1.5rem; /* Provides space between conclusion and button */
+    text-align: right; /* Aligns the button to the right */
+}
+
+.download-report-btn {
+    /* Existing btn-outline styles should apply, but you can add more specific ones here if needed */
+    display: inline-flex; /* Allows icon and text to align */
+    align-items: center; /* Vertically aligns icon and text */
+    gap: 0.5rem; /* Space between icon and text */
+    padding: 0.75rem 1.25rem; /* Adjust padding for a better button size */
+    font-size: 0.95rem; /* Adjust font size */
+    font-weight: 600; /* Make it a bit bolder */
+    border-radius: 8px; /* Slightly more rounded corners */
+}
