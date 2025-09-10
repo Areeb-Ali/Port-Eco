@@ -972,3 +972,7 @@ Reduce gap between ticker and hero section on mobile screens
     justify-content: flex-end; /* Align buttons to the right */
     gap: 1rem; /* Add a gap between the buttons */
 }
+/* 
+#report-container .page-content {
+    padding-top: 130px;
+} */
