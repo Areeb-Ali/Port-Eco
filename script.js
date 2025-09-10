@@ -13,27 +13,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "ADAUSDT Long",
-      symbol: "ADAUSDT",
-      entry: 0.8591, tp: 0.8724, sl: 0,
-      date: "2025-09-09", outcome: "running",
-      proof: "https://x.com/areebithink/status/1965446861231456491"
-    },
-    {
-      id: "RUN-002", title: "XRPUSDT Long",
-      symbol: "XRPUSDT",
-      entry: 2.952, tp: 3.002, sl: 0,
-      date: "2025-09-9", outcome: "running",
-      proof: "https://x.com/areebithink/status/1965446861231456491"
-    },
-    {
-      id: "RUN-003", title: "FETSDT Long",
-      symbol: "FETUSDT",
-      entry: 0.6463, tp: 0.6619, sl: 0,
-      date: "2025-09-09", outcome: "running",
-      proof: "https://x.com/areebithink/status/1965446861231456491"
-    },
+    // {
+    //   id: "RUN-001", title: "ADAUSDT Long",
+    //   symbol: "ADAUSDT",
+    //   entry: 0.8591, tp: 0.8724, sl: 0,
+    //   date: "2025-09-09", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1965446861231456491"
+    // },
+    // {
+    //   id: "RUN-002", title: "XRPUSDT Long",
+    //   symbol: "XRPUSDT",
+    //   entry: 2.952, tp: 3.002, sl: 0,
+    //   date: "2025-09-9", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1965446861231456491"
+    // },
+    // {
+    //   id: "RUN-003", title: "FETSDT Long",
+    //   symbol: "FETUSDT",
+    //   entry: 0.6463, tp: 0.6619, sl: 0,
+    //   date: "2025-09-09", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1965446861231456491"
+    // },
     // {
     //   id: "RUN-004", title: "ARKMUSDT Long", symbol: "ARKNUSDT",
     //   entry: 0.5037, tp: 0.5098, sl: 0.0, date: "2025-08-27",
@@ -544,7 +544,34 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-9",
       outcome: "breakeven",
       proof: "https://x.com/areebithink/status/1965030926938984616"
-    }
+    },
+    {
+      id: "REC-055",
+      title: "ADA Long",
+      symbol: "ADAUSDT",
+      entry: 0.8591, tp: 0.8724, sl: 0,
+      date: "2025-09-10",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1965446861231456491"
+    },
+    {
+      id: "REC-056",
+      title: "XRP Long",
+      symbol: "XRPUSDT",
+      entry: 2.952, tp: 3.002, sl: 0,
+      date: "2025-09-10",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1965446861231456491"
+    },
+    {
+      id: "REC-057",
+      title: "FET Long",
+      symbol: "FETUSDT",
+      entry: 0.6463, tp: 0.6619, sl: 0,
+      date: "2025-09-10",
+      outcome: "breakeven",
+      proof: "https://x.com/areebithink/status/1965446861231456491"
+    },
   ];
 
   function getAllTrades() { return [...recentTrades, ...runningTrades]; }
