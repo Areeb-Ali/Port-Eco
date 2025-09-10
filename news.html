@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Market News & Sentiments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #f0f0f0;
+            --accent-color: #00bcd4;
+            --card-bg: #161b22;
+            --btn-bg: #00bcd4;
+            --btn-text: #000000;
+            --nav-bg: rgba(13, 17, 23, 0.95);
+            --nav-border: #00bcd4;
+            --accent-color-rgb: 0, 188, 212;
+            --nav-height: 68px;
+            --ticker-height: 44px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding-top: calc(var(--nav-height) + var(--ticker-height) - 5px);
+            margin: 0;
+        }
+
+        nav {
+            background: var(--nav-bg);
+            backdrop-filter: blur(12px);
+            padding: 0.6rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 2000;
+            height: var(--nav-height);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .btn {
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            padding: 0.75rem 1.25rem;
+            /* Increased size */
+            border-radius: 8px;
+            /* Slight rounding */
+            font-size: 1.1rem;
+            /* Larger font for clarity */
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #008c9e;
+            /* Slightly darker on hover */
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .page-content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        .report-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+        }
+
+        .sentiment-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .sentiment-badge.positive {
+            background-color: rgba(0, 200, 0, 0.12);
+            color: #00c800;
+        }
+
+        .sentiment-badge.neutral {
+            background-color: rgba(128, 128, 128, 0.12);
+            color: #808080;
+        }
+
+        .sentiment-badge.negative {
+            background-color: rgba(200, 0, 0, 0.12);
+            color: #c80000;
+        }
+
+        #loading-message,
+        #error-message {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .update-info {
+            text-align: right;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Grid */
+        #news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>BEERA<span>LIA</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Reports</a>
+            <a href="#">History</a>
+            <a href="#">News</a>
+        </div>
+        <div class="nav-right">
+            <button class="btn" id="refreshBtn">🔄 Refresh</button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <h2>Live Financial News</h2>
+        <p>Latest news and sentiment analysis for key market movers.</p>
+
+        <div class="update-info">
+            Last Updated: <span id="last-updated"></span> |
+            Hits Left Today: <span id="hits-left"></span>
+        </div>
+
+        <div id="overallSentiment" class="mb-6"></div>
+
+        <div id="loading-message" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i> Fetching news...
+        </div>
+        <div id="error-message" class="hidden"></div>
+
+        <div id="news-container"></div>
+    </main>
+
+    <script>
+        const API_KEY = 'MKH2ZAGMWGWE6N4B';
+        const TOPICS = 'blockchain,cryptocurrency';
+        const MAX_HITS = 25;
+
+        const newsContainer = document.getElementById('news-container');
+        const loadingMessage = document.getElementById('loading-message');
+        const errorMessage = document.getElementById('error-message');
+        const lastUpdatedElement = document.getElementById('last-updated');
+        const hitsLeftElement = document.getElementById('hits-left');
+        const refreshBtn = document.getElementById('refreshBtn');
+
+        function getTodayKey() {
+            return new Date().toISOString().split('T')[0];
+        }
+
+        function getHits() {
+            const data = JSON.parse(localStorage.getItem("hits") || "{}");
+            return data[getTodayKey()] || 0;
+        }
+
+        function incrementHits() {
+            const data = JSON.parse(localStorage.getItem("hits") || "{}");
+            const today = getTodayKey();
+            data[today] = (data[today] || 0) + 1;
+            localStorage.setItem("hits", JSON.stringify(data));
+        }
+
+        function calculateOverallSentiment(articles) {
+            let bullish = 0, bearish = 0, neutral = 0;
+            articles.forEach(item => {
+                if (item.overall_sentiment_label === "Bullish") bullish++;
+                else if (item.overall_sentiment_label === "Bearish") bearish++;
+                else neutral++;
+            });
+
+            let overall = "Neutral";
+            if (bullish > bearish) overall = "Bullish";
+            if (bearish > bullish) overall = "Bearish";
+
+            return { overall, bullish, bearish, neutral };
+        }
+
+        function renderOverallSentiment(stats) {
+            const overallEl = document.getElementById("overallSentiment");
+            overallEl.innerHTML = `
+        <div class="report-card">
+          <h3>📊 Overall Sentiment</h3>
+          <span class="sentiment-badge ${stats.overall.toLowerCase()}">${stats.overall}</span>
+          <p>Bullish: ${stats.bullish} | Bearish: ${stats.bearish} | Neutral: ${stats.neutral}</p>
+        </div>
+      `;
+        }
+
+        function renderNews(articles) {
+            newsContainer.innerHTML = "";
+            const stats = calculateOverallSentiment(articles);
+            renderOverallSentiment(stats);
+
+            articles.forEach(article => {
+                const sentimentClass = getSentimentClass(article.overall_sentiment_label);
+
+                // Convert to PKT with 12-hour format
+                const timePublished = new Date(
+                    article.time_published.substring(0, 4),
+                    article.time_published.substring(4, 6) - 1,
+                    article.time_published.substring(6, 8),
+                    article.time_published.substring(9, 11),
+                    article.time_published.substring(11, 13)
+                );
+
+                const formattedDateTime = timePublished.toLocaleString("en-US", {
+                    timeZone: "Asia/Karachi",
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                    hour: "numeric",
+                    minute: "numeric",
+                    hour12: true
+                });
+
+                const relatedTickers = article.ticker_sentiment.map(ts => ts.ticker).join(', ');
+
+                const newsCard = `
+          <div class="report-card">
+            <h3>${article.title}</h3>
+            <p><small>Published: ${formattedDateTime} (PKT)</small></p>
+            <span class="sentiment-badge ${sentimentClass}">${article.overall_sentiment_label}</span>
+            <p>${article.summary}</p>
+            <p><strong>Tickers:</strong> ${relatedTickers || 'N/A'}</p>
+            <a href="${article.url}" target="_blank" class="btn">Read More</a>
+          </div>
+        `;
+                newsContainer.innerHTML += newsCard;
+            });
+        }
+
+        function getSentimentClass(sentiment) {
+            const lower = sentiment.toLowerCase();
+            if (lower.includes("bullish")) return "positive";
+            if (lower.includes("bearish")) return "negative";
+            return "neutral";
+        }
+
+        async function fetchNewsByTopic() {
+            if (getHits() >= MAX_HITS) {
+                alert("API hit limit reached for today.");
+                return;
+            }
+
+            loadingMessage.classList.remove("hidden");
+            errorMessage.classList.add("hidden");
+
+            const url = `https://www.alphavantage.co/query?function=NEWS_SENTIMENT&topics=${TOPICS}&apikey=${API_KEY}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.feed && data.feed.length > 0) {
+                    incrementHits();
+                    localStorage.setItem("newsData", JSON.stringify(data.feed));
+                    localStorage.setItem("lastUpdated", new Date().toLocaleString("en-US", { timeZone: "Asia/Karachi" }));
+                    renderNews(data.feed);
+                } else {
+                    errorMessage.textContent = "No news found.";
+                    errorMessage.classList.remove("hidden");
+                }
+            } catch (error) {
+                errorMessage.textContent = `Error: ${error.message}`;
+                errorMessage.classList.remove("hidden");
+            } finally {
+                loadingMessage.classList.add("hidden");
+                lastUpdatedElement.textContent = localStorage.getItem("lastUpdated") || "N/A";
+                hitsLeftElement.textContent = MAX_HITS - getHits();
+            }
+        }
+
+        function loadFromCache() {
+            const cached = JSON.parse(localStorage.getItem("newsData") || "[]");
+            if (cached.length > 0) {
+                renderNews(cached);
+                lastUpdatedElement.textContent = localStorage.getItem("lastUpdated");
+                hitsLeftElement.textContent = MAX_HITS - getHits();
+            } else {
+                fetchNewsByTopic();
+            }
+        }
+
+        refreshBtn.addEventListener("click", fetchNewsByTopic);
+
+        loadFromCache();
+    </script>
+</body>
+
+</html>
