@@ -1022,100 +1022,106 @@ document.addEventListener('DOMContentLoaded', loadBlogPosts);
 // Data for all weekly reports
 const weeklyReports = [
     {
-        dateRange: "September 2–9, 2025",
+        dateRange: "August to September 31–6, 2025",
         summary: {
-            totalTrades: 6,
-            winRate: "67%",
-            avgRR: 2.3,
-            netPnL: "+7%",
-            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+            totalTrades: 23,
+            winRate: "90%",
+            avgRR: 1.8,
+            netPnL: "+54%",
+            highlight: "The best performing setup was a +232% gain on an ENS short using 75x leverage, showcasing the potential of identifying high-conviction setups."
         },
         performance: [
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
+            { category: "ETH", details: "Our setups on Ethereum performed well this week, with successful short positions on ETH. Trades aligned with our strategy, which paid off in higher conviction entries." },
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful short positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
+            { category: "BTC", details: "Our setups on Bitcoin performed well this week, with successful long positions on BTC. Trades aligned with our strategy, which paid off in higher conviction entries." },
+            { category: "ETH", details: "Our setups on Ethereum performed well this week, with successful short positions on ETH. Trades aligned with our strategy, which paid off in higher conviction entries." },
+            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
+            { category: "Main Caps", details: "This week's standout main cap was XRP, which saw a strong breakout after consolidating for several Hours and we get 184% Long. The worst performer was SOL, which failed to hold its resistance level with low volume and was a almost breakeven trade Short trade 63% profit." },
+            { category: "High Caps", details: "This week's standout main cap was ENS, which saw a strong breakdown after consolidating for several Hours and we get 232% Short. The worst performer was FET, which failed to hold its Support level with low volume and was a almost breakeven trade Long trade 20% profit." }
         ],
         outlook: [
-            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-            { asset: "ETH", details: "We're watching the $1,900 level closely." }
+            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $113,600 level as a potential breakout point." },
+            { asset: "ETH", details: "We're watching the $4,380 level closely." }
         ],
         conclusion: "Discipline and patience remain key."
     },
-    {
-        dateRange: "September 10–20, 2025",
-        summary: {
-            totalTrades: 6,
-            winRate: "67%",
-            avgRR: 2.3,
-            netPnL: "+7%",
-            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-        },
-        performance: [
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-        ],
-        outlook: [
-            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-            { asset: "ETH", details: "We're watching the $1,900 level closely." }
-        ],
-        conclusion: "Discipline and patience remain key."
-    },
-    {
-        dateRange: "September 21-30, 2025",
-        summary: {
-            totalTrades: 6,
-            winRate: "67%",
-            avgRR: 2.3,
-            netPnL: "+7%",
-            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-        },
-        performance: [
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-        ],
-        outlook: [
-            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-            { asset: "ETH", details: "We're watching the $1,900 level closely." }
-        ],
-        conclusion: "Discipline and patience remain key."
-    },
-    {
-        dateRange: "October 2–9, 2025",
-        summary: {
-            totalTrades: 6,
-            winRate: "67%",
-            avgRR: 2.3,
-            netPnL: "+7%",
-            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-        },
-        performance: [
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-        ],
-        outlook: [
-            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-            { asset: "ETH", details: "We're watching the $1,900 level closely." }
-        ],
-        conclusion: "Discipline and patience remain key."
-    },
-    {
-        dateRange: "Octuber 10–20, 2025",
-        summary: {
-            totalTrades: 6,
-            winRate: "67%",
-            avgRR: 2.3,
-            netPnL: "+7%",
-            highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-        },
-        performance: [
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-            { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-        ],
-        outlook: [
-            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-            { asset: "ETH", details: "We're watching the $1,900 level closely." }
-        ],
-        conclusion: "Discipline and patience remain key."
-    }
+    // {
+    //     dateRange: "September 10–20, 2025",
+    //     summary: {
+    //         totalTrades: 6,
+    //         winRate: "67%",
+    //         avgRR: 2.3,
+    //         netPnL: "+7%",
+    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+    //     },
+    //     performance: [
+    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+    //     ],
+    //     outlook: [
+    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+    //     ],
+    //     conclusion: "Discipline and patience remain key."
+    // },
+    // {
+    //     dateRange: "September 21-30, 2025",
+    //     summary: {
+    //         totalTrades: 6,
+    //         winRate: "67%",
+    //         avgRR: 2.3,
+    //         netPnL: "+7%",
+    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+    //     },
+    //     performance: [
+    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+    //     ],
+    //     outlook: [
+    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+    //     ],
+    //     conclusion: "Discipline and patience remain key."
+    // },
+    // {
+    //     dateRange: "October 2–9, 2025",
+    //     summary: {
+    //         totalTrades: 6,
+    //         winRate: "67%",
+    //         avgRR: 2.3,
+    //         netPnL: "+7%",
+    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+    //     },
+    //     performance: [
+    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+    //     ],
+    //     outlook: [
+    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+    //     ],
+    //     conclusion: "Discipline and patience remain key."
+    // },
+    // {
+    //     dateRange: "Octuber 10–20, 2025",
+    //     summary: {
+    //         totalTrades: 6,
+    //         winRate: "67%",
+    //         avgRR: 2.3,
+    //         netPnL: "+7%",
+    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+    //     },
+    //     performance: [
+    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+    //     ],
+    //     outlook: [
+    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+    //     ],
+    //     conclusion: "Discipline and patience remain key."
+    // }
 ];
 
 function generateReportHTML(report, index) {
