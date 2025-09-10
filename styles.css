@@ -965,3 +965,10 @@ Reduce gap between ticker and hero section on mobile screens
     font-weight: 600; /* Make it a bit bolder */
     border-radius: 8px; /* Slightly more rounded corners */
 }
+
+.report-actions {
+    margin-top: 1.5rem;
+    display: flex; /* Use flexbox to align buttons */
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 1rem; /* Add a gap between the buttons */
+}

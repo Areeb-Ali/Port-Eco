@@ -1123,7 +1123,7 @@ function generateReportHTML(report, index) {
     let outlookHTML = report.outlook.map(o => `<p><strong>${o.asset}:</strong> ${o.details}</p>`).join('');
 
     return `
-        <div class="report-card" data-index="${index}">
+        <div class="report-card" data-index="${index}" id="report-${index}">
             <button class="report-toggle-button">
                 <span>Weekly Market Report – ${report.dateRange}</span>
                 <i class="fas fa-chevron-down report-toggle-icon"></i>
@@ -1145,6 +1145,9 @@ function generateReportHTML(report, index) {
                 <div class="report-actions">
                     <button class="btn btn-outline download-report-btn" data-index="${index}">
                         <i class="fas fa-download"></i> Download Report
+                    </button>
+                    <button class="btn btn-outline share-report-btn" data-index="${index}">
+                        <i class="fas fa-share-alt"></i> Share Report
                     </button>
                 </div>
             </div>
@@ -1168,9 +1171,17 @@ function renderReports() {
 
         document.querySelectorAll('.download-report-btn').forEach(button => {
             button.addEventListener('click', (event) => {
-                event.stopPropagation(); // Prevent the card's click event from firing
+                event.stopPropagation();
                 const reportIndex = button.dataset.index;
                 downloadReport(weeklyReports[reportIndex]);
+            });
+        });
+
+        document.querySelectorAll('.share-report-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const reportIndex = button.dataset.index;
+                shareReport(reportIndex);
             });
         });
     }
@@ -1203,6 +1214,34 @@ function filterReports() {
             card.style.display = 'none';
         }
     });
+}
+
+function shareReport(index) {
+    const report = weeklyReports[index];
+    const reportTitle = encodeURIComponent(`Weekly Market Report – ${report.dateRange}`);
+    const reportDescription = encodeURIComponent(report.summary.highlight);
+    const pageUrl = window.location.href.split('#')[0]; // Get the URL without any existing hash
+
+    // Construct the URL with the unique fragment identifier
+    const shareUrlWithFragment = `${pageUrl}#report-${index}`;
+
+    // Use the Web Share API or the fallback
+    if (navigator.share) {
+        navigator.share({
+            title: reportTitle,
+            text: `Check out this weekly market report from BeeraLia: ${reportDescription}`,
+            url: shareUrlWithFragment
+        }).then(() => {
+            console.log('Successfully shared!');
+        }).catch((error) => {
+            console.error('Error sharing:', error);
+            // Fallback
+            window.location.href = `mailto:?subject=${reportTitle}&body=Check out this weekly market report from BeeraLia: ${shareUrlWithFragment}%0A%0A${reportDescription}`;
+        });
+    } else {
+        // Fallback for browsers that don't support the Web Share API
+        window.location.href = `mailto:?subject=${reportTitle}&body=Check out this weekly market report from BeeraLia: ${shareUrlWithFragment}%0A%0A${reportDescription}`;
+    }
 }
 
 function downloadReport(report) {
@@ -1264,3 +1303,25 @@ function downloadReport(report) {
 }
 
 window.addEventListener('DOMContentLoaded', renderReports);
+function handleUrlFragment() {
+    const hash = window.location.hash;
+    if (hash) {
+        const reportId = hash.substring(1); // Remove the '#'
+        const targetReportCard = document.getElementById(reportId);
+        
+        if (targetReportCard) {
+            // Find the correct button and toggle the report content
+            const toggleButton = targetReportCard.querySelector('.report-toggle-button');
+            toggleReport(toggleButton);
+
+            // Scroll the report card into view
+            targetReportCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+}
+
+// Call this function after rendering reports to handle direct links
+window.addEventListener('DOMContentLoaded', () => {
+    renderReports();
+    handleUrlFragment();
+});
