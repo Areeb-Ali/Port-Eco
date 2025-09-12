@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "ADAUSDT Long",
-    //   symbol: "ADAUSDT",
-    //   entry: 0.8591, tp: 0.8724, sl: 0,
-    //   date: "2025-09-09", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1965446861231456491"
-    // },
-    // {
-    //   id: "RUN-002", title: "XRPUSDT Long",
-    //   symbol: "XRPUSDT",
-    //   entry: 2.952, tp: 3.002, sl: 0,
-    //   date: "2025-09-9", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1965446861231456491"
-    // },
+    {
+      id: "RUN-001", title: "XRPUSDT Short",
+      symbol: "XRPUSDT",
+      entry: 3.067, tp: 3.0175, sl: 0,
+      date: "2025-09-12", outcome: "running",
+      proof: "https://x.com/areebithink/status/1966384149473759691"
+    },
+    {
+      id: "RUN-002", title: "ETHUSDT Short",
+      symbol: "ETHUSDT",
+      entry: 4550.32, tp: 4488.13, sl: 0,
+      date: "2025-09-12", outcome: "running",
+      proof: "https://x.com/areebithink/status/1966384149473759691"
+    },
     // {
     //   id: "RUN-003", title: "FETSDT Long",
     //   symbol: "FETUSDT",
@@ -571,6 +571,42 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-10",
       outcome: "breakeven",
       proof: "https://x.com/areebithink/status/1965446861231456491"
+    },
+    {
+      id: "REC-058",
+      title: "ETH Short",
+      symbol: "ETHUSDT",
+      entry: 4408.43, tp: 4200, sl: 4451.46,
+      date: "2025-09-11",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1965756712868298757"
+    },
+    {
+      id: "REC-059",
+      title: "BTC Short",
+      symbol: "BTCUSDT",
+      entry: 113298, tp: 112001, sl: 114212,
+      date: "2025-09-11",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1965756712868298757"
+    },
+    {
+      id: "REC-060",
+      title: "ADA Long",
+      symbol: "ADAUSDT",
+      entry: 0.8767, tp: 0.892, sl: 0.8724,
+      date: "2025-09-12",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1966171474009665739"
+    },
+    {
+      id: "REC-061",
+      title: "NEAR Long",
+      symbol: "NEARUSDT",
+      entry: 2.703, tp: 2.764, sl: 2.687,
+      date: "2025-09-12",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1966173458548899894"
     },
   ];
 
