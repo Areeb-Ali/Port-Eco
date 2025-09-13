@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "XRPUSDT Short",
-      symbol: "XRPUSDT",
-      entry: 3.067, tp: 3.0175, sl: 0,
-      date: "2025-09-12", outcome: "running",
-      proof: "https://x.com/areebithink/status/1966384149473759691"
-    },
-    {
-      id: "RUN-002", title: "ETHUSDT Short",
-      symbol: "ETHUSDT",
-      entry: 4550.32, tp: 4488.13, sl: 0,
-      date: "2025-09-12", outcome: "running",
-      proof: "https://x.com/areebithink/status/1966384149473759691"
-    },
+    // {
+    //   id: "RUN-001", title: "XRPUSDT Short",
+    //   symbol: "XRPUSDT",
+    //   entry: 3.067, tp: 3.0173, sl: 0,
+    //   date: "2025-09-12", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1966384149473759691"
+    // },
+    // {
+    //   id: "RUN-002", title: "ETHUSDT Short",
+    //   symbol: "ETHUSDT",
+    //   entry: 4635, tp: 4614.72, sl: 0,
+    //   date: "2025-09-12", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1966384149473759691"
+    // },
     // {
     //   id: "RUN-003", title: "FETSDT Long",
     //   symbol: "FETUSDT",
@@ -607,6 +607,24 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-12",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1966173458548899894"
+    },,
+    {
+      id: "REC-062",
+      title: "ETH Short",
+      symbol: "ETHUSDT",
+      entry: 4635, tp: 4614.72, sl: 0,
+      date: "2025-09-13",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1966384149473759691"
+    },
+    {
+      id: "REC-063",
+      title: "XRP Short",
+      symbol: "XRPUSDT",
+      ntry: 3.067, tp: 3.0173, sl: 3.079,
+      date: "2025-09-12",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1966384149473759691"
     },
   ];
 
