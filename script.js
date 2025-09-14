@@ -1133,7 +1133,7 @@ const weeklyReports = [
       totalTrades: 14,
       winRate: "80%",
       avgRR: 1.28,
-      netPnL: "+7%",
+      netPnL: "+10%",
       highlight: "The strongest performance this week was achieved on a NEAR long position, delivering a +208% return utilizing 100x leverage, entered on September 12, 2025"
     },
     performance: [
@@ -1166,7 +1166,7 @@ const weeklyReports = [
     outlook: [
       { asset: "BTC", details: "Neutral to bullish bias remains intact. We are monitoring the $117,300 level as the primary breakout threshold. While a clean breakout this week appears unlikely, a weekly close below $117,300 could open the path toward $114,200 before a potential recovery leg higher. Macroeconomic data and broader market sentiment will remain key catalysts for confirmation."},
       { asset: "ETH", details: "Ethereum maintains a neutral to bullish posture, with $4,800 as the key breakout level to watch. A close below $4,790 would likely trigger a retest of $4,600–$4,500, before conditions set up for a potential rebound. As with BTC, external macroeconomic factors and news flow will play a significant role in shaping near-term price action."},
-      { asset: "Note", details: "This report has been published by Beeralia on September 14, 2025 at 7:25 AM EST, ahead of the current weekly close. The outlook and levels discussed herein are based on market conditions observed at the time of publication. Should any of the identified breakout or breakdown levels be triggered prior to the weekly close, the report will be updated accordingly. In the absence of such developments, this outlook will remain valid and serve as the basis for the following week’s analysis." }
+      { asset: "Note", details: "This report has been published by Beeralia on September 14, 2025 at 7:35 AM EST, ahead of the current weekly close. The outlook and levels discussed herein are based on market conditions observed at the time of publication. Should any of the identified breakout or breakdown levels be triggered prior to the weekly close, the report will be updated accordingly. In the absence of such developments, this outlook will remain valid and serve as the basis for the following week’s analysis." }
     ],
     conclusion: "Discipline and patience remain key."
   },
