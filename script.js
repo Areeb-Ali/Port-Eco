@@ -1164,8 +1164,8 @@ const weeklyReports = [
     ],
 
     outlook: [
-      { asset: "BTC", details: "Neutral to bullish bias remains intact. We are monitoring the $117,300 level as the primary breakout threshold. While a clean breakout this week appears unlikely, a weekly close below $117,300 could open the path toward $114,200 before a potential recovery leg higher. Macroeconomic data and broader market sentiment will remain key catalysts for confirmation."},
-      { asset: "ETH", details: "Ethereum maintains a neutral to bullish posture, with $4,800 as the key breakout level to watch. A close below $4,790 would likely trigger a retest of $4,600–$4,500, before conditions set up for a potential rebound. As with BTC, external macroeconomic factors and news flow will play a significant role in shaping near-term price action."},
+      { asset: "BTC", details: "Neutral to bullish bias remains intact. We are monitoring the $117,300 level as the primary breakout threshold. While a clean breakout this week appears unlikely, a weekly close below $117,300 could open the path toward $114,200 before a potential recovery leg higher. Macroeconomic data and broader market sentiment will remain key catalysts for confirmation." },
+      { asset: "ETH", details: "Ethereum maintains a neutral to bullish posture, with $4,800 as the key breakout level to watch. A close below $4,790 would likely trigger a retest of $4,600–$4,500, before conditions set up for a potential rebound. As with BTC, external macroeconomic factors and news flow will play a significant role in shaping near-term price action." },
       { asset: "Note", details: "This report has been published by Beeralia on September 14, 2025 at 7:35 AM EST, ahead of the current weekly close. The outlook and levels discussed herein are based on market conditions observed at the time of publication. Should any of the identified breakout or breakdown levels be triggered prior to the weekly close, the report will be updated accordingly. In the absence of such developments, this outlook will remain valid and serve as the basis for the following week’s analysis." }
     ],
     conclusion: "Discipline and patience remain key."
@@ -1355,7 +1355,9 @@ function shareReport(index) {
   }
 }
 
-function downloadReport(report) {
+// Replace the existing downloadReport function with this corrected version
+function downloadReport(reportIndex) {
+  const report = weeklyReports[reportIndex];
   const element = document.createElement('div');
   element.innerHTML = `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: relative; padding: 2rem; color: #333; line-height: 1.6;">
@@ -1405,12 +1407,85 @@ function downloadReport(report) {
     `;
   const opt = {
     margin: 1,
-    filename: `Official_Report_${report.dateRange}.pdf`,
+    filename: `Official_Report_${report.dateRange.replace(/\s+/g, '_')}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2 },
     jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
   };
   html2pdf().from(element).set(opt).save();
+}
+
+// Also update the event listener setup in the renderReports function
+function renderReports() {
+  const reportContainer = document.getElementById('report-container');
+  if (reportContainer) {
+    const sortedReports = [...weeklyReports].reverse();
+    const allReportsHTML = sortedReports.map((report, index) => generateReportHTML(report, index)).join('');
+    reportContainer.innerHTML = allReportsHTML;
+
+    // Attach event listeners to all toggle and download buttons
+    document.querySelectorAll('.report-toggle-button').forEach(button => {
+      button.addEventListener('click', () => {
+        toggleReport(button);
+      });
+    });
+
+    document.querySelectorAll('.download-report-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const reportIndex = parseInt(button.dataset.index);
+        // Get the correct report index from the sorted array
+        const originalIndex = weeklyReports.length - 1 - reportIndex;
+        downloadReport(originalIndex);
+      });
+    });
+
+    document.querySelectorAll('.share-report-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const reportIndex = button.dataset.index;
+        shareReport(reportIndex);
+      });
+    });
+  }
+}
+
+// Also update the generateReportHTML function to use the correct index
+function generateReportHTML(report, index) {
+  let performanceHTML = report.performance.map(p => `<p><strong>${p.category}:</strong> ${p.details}</p>`).join('');
+  let outlookHTML = report.outlook.map(o => `<p><strong>${o.asset}:</strong> ${o.details}</p>`).join('');
+
+  return `
+        <div class="report-card" data-index="${index}" id="report-${index}">
+            <button class="report-toggle-button">
+                <span>Weekly Market Report – ${report.dateRange}</span>
+                <i class="fas fa-chevron-down report-toggle-icon"></i>
+            </button>
+            <div class="report-content">
+                <h3>📌 Weekly Summary</h3>
+                <div class="summary-metrics">
+                    <div class="metric-item"><strong>${report.summary.totalTrades}</strong> Total Trades Taken</div>
+                    <div class="metric-item"><strong>${report.summary.winRate}</strong> Win Rate</div>
+                    <div class="metric-item"><strong>${report.summary.avgRR}</strong> Avg R/R</div>
+                    <div class="metric-item"><strong>${report.summary.netPnL}</strong> Net Weekly PnL</div>
+                </div>
+                <p class="tagline">${report.summary.highlight}</p>
+                <h3>📈 Performance Overview</h3>
+                ${performanceHTML}
+                <h3>🗓️ Market Outlook (Next Week)</h3>
+                ${outlookHTML}
+                <p>${report.conclusion}</p>
+                <div class="report-actions">
+                    <button class="btn btn-outline download-report-btn" data-index="${index}">
+                        <i class="fas fa-download"></i> Download Report
+                    </button>
+                    <button class="btn btn-outline share-report-btn" data-index="${index}">
+                        <i class="fas fa-share-alt"></i> Share Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 window.addEventListener('DOMContentLoaded', renderReports);
