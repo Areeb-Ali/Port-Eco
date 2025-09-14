@@ -607,7 +607,7 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-12",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1966173458548899894"
-    },,
+    }, ,
     {
       id: "REC-062",
       title: "ETH Short",
@@ -1102,114 +1102,138 @@ document.addEventListener('DOMContentLoaded', loadBlogPosts);
 
 // Data for all weekly reports
 const weeklyReports = [
-    {
-        dateRange: "August to September 31–6, 2025",
-        summary: {
-            totalTrades: 23,
-            winRate: "90%",
-            avgRR: 1.8,
-            netPnL: "+54%",
-            highlight: "The best performing setup was a +232% gain on an ENS short using 75x leverage, showcasing the potential of identifying high-conviction setups."
-        },
-        performance: [
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
-            { category: "ETH", details: "Our setups on Ethereum performed well this week, with successful short positions on ETH. Trades aligned with our strategy, which paid off in higher conviction entries." },
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful short positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
-            { category: "BTC", details: "Our setups on Bitcoin performed well this week, with successful long positions on BTC. Trades aligned with our strategy, which paid off in higher conviction entries." },
-            { category: "ETH", details: "Our setups on Ethereum performed well this week, with successful short positions on ETH. Trades aligned with our strategy, which paid off in higher conviction entries." },
-            { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
-            { category: "Main Caps", details: "This week's standout main cap was XRP, which saw a strong breakout after consolidating for several Hours and we get 184% Long. The worst performer was SOL, which failed to hold its resistance level with low volume and was a almost breakeven trade Short trade 63% profit." },
-            { category: "High Caps", details: "This week's standout main cap was ENS, which saw a strong breakdown after consolidating for several Hours and we get 232% Short. The worst performer was FET, which failed to hold its Support level with low volume and was a almost breakeven trade Long trade 20% profit." }
-        ],
-        outlook: [
-            { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $113,600 level as a potential breakout point." },
-            { asset: "ETH", details: "We're watching the $4,380 level closely." }
-        ],
-        conclusion: "Discipline and patience remain key."
+  {
+    dateRange: "August to September 31–6, 2025",
+    summary: {
+      totalTrades: 23,
+      winRate: "90%",
+      avgRR: 1.8,
+      netPnL: "+54%",
+      highlight: "The best performing setup was a +232% gain on an ENS short using 75x leverage, showcasing the potential of identifying high-conviction setups."
     },
-    // {
-    //     dateRange: "September 10–20, 2025",
-    //     summary: {
-    //         totalTrades: 6,
-    //         winRate: "67%",
-    //         avgRR: 2.3,
-    //         netPnL: "+7%",
-    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-    //     },
-    //     performance: [
-    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-    //     ],
-    //     outlook: [
-    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
-    //     ],
-    //     conclusion: "Discipline and patience remain key."
-    // },
-    // {
-    //     dateRange: "September 21-30, 2025",
-    //     summary: {
-    //         totalTrades: 6,
-    //         winRate: "67%",
-    //         avgRR: 2.3,
-    //         netPnL: "+7%",
-    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-    //     },
-    //     performance: [
-    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-    //     ],
-    //     outlook: [
-    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
-    //     ],
-    //     conclusion: "Discipline and patience remain key."
-    // },
-    // {
-    //     dateRange: "October 2–9, 2025",
-    //     summary: {
-    //         totalTrades: 6,
-    //         winRate: "67%",
-    //         avgRR: 2.3,
-    //         netPnL: "+7%",
-    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-    //     },
-    //     performance: [
-    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-    //     ],
-    //     outlook: [
-    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
-    //     ],
-    //     conclusion: "Discipline and patience remain key."
-    // },
-    // {
-    //     dateRange: "Octuber 10–20, 2025",
-    //     summary: {
-    //         totalTrades: 6,
-    //         winRate: "67%",
-    //         avgRR: 2.3,
-    //         netPnL: "+7%",
-    //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-    //     },
-    //     performance: [
-    //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-    //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-    //     ],
-    //     outlook: [
-    //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-    //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
-    //     ],
-    //     conclusion: "Discipline and patience remain key."
-    // }
+    performance: [
+      { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
+      { category: "ETH", details: "Our setups on Ethereum performed well this week, with successful short positions on ETH. Trades aligned with our strategy, which paid off in higher conviction entries." },
+      { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful short positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
+      { category: "BTC", details: "Our setups on Bitcoin performed well this week, with successful long positions on BTC. Trades aligned with our strategy, which paid off in higher conviction entries." },
+      { category: "ETH", details: "Our setups on Ethereum performed well this week, with successful short positions on ETH. Trades aligned with our strategy, which paid off in higher conviction entries." },
+      { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy, which paid off in higher conviction entries." },
+      { category: "Main Caps", details: "This week's standout main cap was XRP, which saw a strong breakout after consolidating for several Hours and we get 184% Long. The worst performer was SOL, which failed to hold its resistance level with low volume and was a almost breakeven trade Short trade 63% profit." },
+      { category: "High Caps", details: "This week's standout main cap was ENS, which saw a strong breakdown after consolidating for several Hours and we get 232% Short. The worst performer was FET, which failed to hold its Support level with low volume and was a almost breakeven trade Long trade 20% profit." }
+    ],
+    outlook: [
+      { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $113,600 level as a potential breakout point." },
+      { asset: "ETH", details: "We're watching the $4,380 level closely." }
+    ],
+    conclusion: "Discipline and patience remain key."
+  },
+  {
+    dateRange: "September 7–13, 2025",
+    summary: {
+      totalTrades: 14,
+      winRate: "80%",
+      avgRR: 1.28,
+      netPnL: "+7%",
+      highlight: "The strongest performance this week was achieved on a NEAR long position, delivering a +208% return utilizing 100x leverage, entered on September 12, 2025"
+    },
+    performance: [
+      {
+        category: "BTC",
+        details: "Our Bitcoin setups delivered mixed results this week. We secured profitable trades on both the long (Sept 8) and short (Sept 9) side, while subsequent shorts (Sept 11) underperformed. The results highlight the importance of timing entries in high-volatility environments."
+      },
+      {
+        category: "ETH",
+        details: "Ethereum trading activity produced a contrasting performance. While the Sept 13 short trade closed successfully, the Sept 11 short was the weakest of the week, registering a -98% loss. This divergence underscores the need for precision in execution around major resistance levels."
+      },
+      {
+        category: "ADA",
+        details: "Cardano proved to be the strongest main-cap performer. The Sept 12 long position returned +160% at 100x leverage, driven by strong momentum following earlier consolidation. Other ADA trades produced wins and breakevens, but this setup was the standout."
+      },
+      {
+        category: "XRP",
+        details: "XRP trades were mixed. Several attempts resulted in breakeven exits due to muted follow-through, though the Sept 12 short provided a profitable outcome. Overall, XRP reflected a consolidating market with limited conviction moves."
+      },
+      {
+        category: "Main Caps",
+        details: "Among main caps, the best performer was ADA with a +160% long position on Sept 12 at 100x leverage. The weakest was ETH, with a -98% short on Sept 11. These contrasting results highlight the selective nature of opportunity capture in high-liquidity assets."
+      },
+      {
+        category: "High Caps",
+        details: "Within high caps, NEAR led performance with a +208% long trade on Sept 12 at 100x leverage. Conversely, FET was the weakest, closing at near-breakeven (-1%) on Sept 10. The data reflects both the outsized opportunity and risk management challenges present in lower-liquidity markets."
+      }
+    ],
+
+    outlook: [
+      { asset: "BTC", details: "Neutral to bullish bias remains intact. We are monitoring the $117,300 level as the primary breakout threshold. While a clean breakout this week appears unlikely, a weekly close below $117,300 could open the path toward $114,200 before a potential recovery leg higher. Macroeconomic data and broader market sentiment will remain key catalysts for confirmation."},
+      { asset: "ETH", details: "Ethereum maintains a neutral to bullish posture, with $4,800 as the key breakout level to watch. A close below $4,790 would likely trigger a retest of $4,600–$4,500, before conditions set up for a potential rebound. As with BTC, external macroeconomic factors and news flow will play a significant role in shaping near-term price action."},
+      { asset: "Note", details: "This report has been published by Beeralia on September 14, 2025 at 7:25 AM EST, ahead of the current weekly close. The outlook and levels discussed herein are based on market conditions observed at the time of publication. Should any of the identified breakout or breakdown levels be triggered prior to the weekly close, the report will be updated accordingly. In the absence of such developments, this outlook will remain valid and serve as the basis for the following week’s analysis." }
+    ],
+    conclusion: "Discipline and patience remain key."
+  },
+  // {
+  //     dateRange: "September 21-30, 2025",
+  //     summary: {
+  //         totalTrades: 6,
+  //         winRate: "67%",
+  //         avgRR: 2.3,
+  //         netPnL: "+7%",
+  //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+  //     },
+  //     performance: [
+  //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+  //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+  //     ],
+  //     outlook: [
+  //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+  //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+  //     ],
+  //     conclusion: "Discipline and patience remain key."
+  // },
+  // {
+  //     dateRange: "October 2–9, 2025",
+  //     summary: {
+  //         totalTrades: 6,
+  //         winRate: "67%",
+  //         avgRR: 2.3,
+  //         netPnL: "+7%",
+  //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+  //     },
+  //     performance: [
+  //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+  //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+  //     ],
+  //     outlook: [
+  //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+  //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+  //     ],
+  //     conclusion: "Discipline and patience remain key."
+  // },
+  // {
+  //     dateRange: "Octuber 10–20, 2025",
+  //     summary: {
+  //         totalTrades: 6,
+  //         winRate: "67%",
+  //         avgRR: 2.3,
+  //         netPnL: "+7%",
+  //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
+  //     },
+  //     performance: [
+  //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
+  //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
+  //     ],
+  //     outlook: [
+  //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
+  //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
+  //     ],
+  //     conclusion: "Discipline and patience remain key."
+  // }
 ];
 
 function generateReportHTML(report, index) {
-    let performanceHTML = report.performance.map(p => `<p><strong>${p.category}:</strong> ${p.details}</p>`).join('');
-    let outlookHTML = report.outlook.map(o => `<p><strong>${o.asset}:</strong> ${o.details}</p>`).join('');
+  let performanceHTML = report.performance.map(p => `<p><strong>${p.category}:</strong> ${p.details}</p>`).join('');
+  let outlookHTML = report.outlook.map(o => `<p><strong>${o.asset}:</strong> ${o.details}</p>`).join('');
 
-    return `
+  return `
         <div class="report-card" data-index="${index}" id="report-${index}">
             <button class="report-toggle-button">
                 <span>Weekly Market Report – ${report.dateRange}</span>
@@ -1243,97 +1267,97 @@ function generateReportHTML(report, index) {
 }
 
 function renderReports() {
-    const reportContainer = document.getElementById('report-container');
-    if (reportContainer) {
-        const sortedReports = [...weeklyReports].reverse();
-        const allReportsHTML = sortedReports.map((report, index) => generateReportHTML(report, index)).join('');
-        reportContainer.innerHTML = allReportsHTML;
+  const reportContainer = document.getElementById('report-container');
+  if (reportContainer) {
+    const sortedReports = [...weeklyReports].reverse();
+    const allReportsHTML = sortedReports.map((report, index) => generateReportHTML(report, index)).join('');
+    reportContainer.innerHTML = allReportsHTML;
 
-        // Attach event listeners to all toggle and download buttons
-        document.querySelectorAll('.report-toggle-button').forEach(button => {
-            button.addEventListener('click', () => {
-                toggleReport(button);
-            });
-        });
+    // Attach event listeners to all toggle and download buttons
+    document.querySelectorAll('.report-toggle-button').forEach(button => {
+      button.addEventListener('click', () => {
+        toggleReport(button);
+      });
+    });
 
-        document.querySelectorAll('.download-report-btn').forEach(button => {
-            button.addEventListener('click', (event) => {
-                event.stopPropagation();
-                const reportIndex = button.dataset.index;
-                downloadReport(weeklyReports[reportIndex]);
-            });
-        });
+    document.querySelectorAll('.download-report-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const reportIndex = button.dataset.index;
+        downloadReport(weeklyReports[reportIndex]);
+      });
+    });
 
-        document.querySelectorAll('.share-report-btn').forEach(button => {
-            button.addEventListener('click', (event) => {
-                event.stopPropagation();
-                const reportIndex = button.dataset.index;
-                shareReport(reportIndex);
-            });
-        });
-    }
+    document.querySelectorAll('.share-report-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const reportIndex = button.dataset.index;
+        shareReport(reportIndex);
+      });
+    });
+  }
 }
 
 function toggleReport(button) {
-    const content = button.nextElementSibling;
-    const icon = button.querySelector('.report-toggle-icon');
+  const content = button.nextElementSibling;
+  const icon = button.querySelector('.report-toggle-icon');
 
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        icon.classList.remove('active');
-    } else {
-        document.querySelectorAll('.report-content').forEach(c => c.style.display = "none");
-        document.querySelectorAll('.report-toggle-icon').forEach(i => i.classList.remove('active'));
+  if (content.style.display === "block") {
+    content.style.display = "none";
+    icon.classList.remove('active');
+  } else {
+    document.querySelectorAll('.report-content').forEach(c => c.style.display = "none");
+    document.querySelectorAll('.report-toggle-icon').forEach(i => i.classList.remove('active'));
 
-        content.style.display = "block";
-        icon.classList.add('active');
-    }
+    content.style.display = "block";
+    icon.classList.add('active');
+  }
 }
 
 function filterReports() {
-    const searchTerm = document.getElementById('reportSearch').value.toLowerCase();
-    const cards = document.querySelectorAll('.report-card');
-    cards.forEach(card => {
-        const dateRange = card.querySelector('span').textContent.toLowerCase();
-        if (dateRange.includes(searchTerm)) {
-            card.style.display = 'block';
-        } else {
-            card.style.display = 'none';
-        }
-    });
+  const searchTerm = document.getElementById('reportSearch').value.toLowerCase();
+  const cards = document.querySelectorAll('.report-card');
+  cards.forEach(card => {
+    const dateRange = card.querySelector('span').textContent.toLowerCase();
+    if (dateRange.includes(searchTerm)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
 }
 
 function shareReport(index) {
-    const report = weeklyReports[index];
-    const reportTitle = encodeURIComponent(`Weekly Market Report – ${report.dateRange}`);
-    const reportDescription = encodeURIComponent(report.summary.highlight);
-    const pageUrl = window.location.href.split('#')[0]; // Get the URL without any existing hash
+  const report = weeklyReports[index];
+  const reportTitle = encodeURIComponent(`Weekly Market Report – ${report.dateRange}`);
+  const reportDescription = encodeURIComponent(report.summary.highlight);
+  const pageUrl = window.location.href.split('#')[0]; // Get the URL without any existing hash
 
-    // Construct the URL with the unique fragment identifier
-    const shareUrlWithFragment = `${pageUrl}#report-${index}`;
+  // Construct the URL with the unique fragment identifier
+  const shareUrlWithFragment = `${pageUrl}#report-${index}`;
 
-    // Use the Web Share API or the fallback
-    if (navigator.share) {
-        navigator.share({
-            title: reportTitle,
-            text: `Check out this weekly market report from BeeraLia: ${reportDescription}`,
-            url: shareUrlWithFragment
-        }).then(() => {
-            console.log('Successfully shared!');
-        }).catch((error) => {
-            console.error('Error sharing:', error);
-            // Fallback
-            window.location.href = `mailto:?subject=${reportTitle}&body=Check out this weekly market report from BeeraLia: ${shareUrlWithFragment}%0A%0A${reportDescription}`;
-        });
-    } else {
-        // Fallback for browsers that don't support the Web Share API
-        window.location.href = `mailto:?subject=${reportTitle}&body=Check out this weekly market report from BeeraLia: ${shareUrlWithFragment}%0A%0A${reportDescription}`;
-    }
+  // Use the Web Share API or the fallback
+  if (navigator.share) {
+    navigator.share({
+      title: reportTitle,
+      text: `Check out this weekly market report from BeeraLia: ${reportDescription}`,
+      url: shareUrlWithFragment
+    }).then(() => {
+      console.log('Successfully shared!');
+    }).catch((error) => {
+      console.error('Error sharing:', error);
+      // Fallback
+      window.location.href = `mailto:?subject=${reportTitle}&body=Check out this weekly market report from BeeraLia: ${shareUrlWithFragment}%0A%0A${reportDescription}`;
+    });
+  } else {
+    // Fallback for browsers that don't support the Web Share API
+    window.location.href = `mailto:?subject=${reportTitle}&body=Check out this weekly market report from BeeraLia: ${shareUrlWithFragment}%0A%0A${reportDescription}`;
+  }
 }
 
 function downloadReport(report) {
-    const element = document.createElement('div');
-    element.innerHTML = `
+  const element = document.createElement('div');
+  element.innerHTML = `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; position: relative; padding: 2rem; color: #333; line-height: 1.6;">
             <div style="
                 position: absolute;
@@ -1379,36 +1403,36 @@ function downloadReport(report) {
             </footer>
         </div>
     `;
-    const opt = {
-        margin: 1,
-        filename: `Official_Report_${report.dateRange}.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
-    html2pdf().from(element).set(opt).save();
+  const opt = {
+    margin: 1,
+    filename: `Official_Report_${report.dateRange}.pdf`,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+  };
+  html2pdf().from(element).set(opt).save();
 }
 
 window.addEventListener('DOMContentLoaded', renderReports);
 function handleUrlFragment() {
-    const hash = window.location.hash;
-    if (hash) {
-        const reportId = hash.substring(1); // Remove the '#'
-        const targetReportCard = document.getElementById(reportId);
-        
-        if (targetReportCard) {
-            // Find the correct button and toggle the report content
-            const toggleButton = targetReportCard.querySelector('.report-toggle-button');
-            toggleReport(toggleButton);
+  const hash = window.location.hash;
+  if (hash) {
+    const reportId = hash.substring(1); // Remove the '#'
+    const targetReportCard = document.getElementById(reportId);
 
-            // Scroll the report card into view
-            targetReportCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+    if (targetReportCard) {
+      // Find the correct button and toggle the report content
+      const toggleButton = targetReportCard.querySelector('.report-toggle-button');
+      toggleReport(toggleButton);
+
+      // Scroll the report card into view
+      targetReportCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  }
 }
 
 // Call this function after rendering reports to handle direct links
 window.addEventListener('DOMContentLoaded', () => {
-    renderReports();
-    handleUrlFragment();
+  renderReports();
+  handleUrlFragment();
 });
