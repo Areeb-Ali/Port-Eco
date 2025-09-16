@@ -621,10 +621,65 @@ document.addEventListener('DOMContentLoaded', function () {
       id: "REC-063",
       title: "XRP Short",
       symbol: "XRPUSDT",
-      ntry: 3.067, tp: 3.0173, sl: 3.079,
+      entry: 3.067, tp: 3.0173, sl: 3.079,
       date: "2025-09-12",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1966384149473759691"
+    },
+    {
+      id: "REC-064",
+      title: "ENS Long",
+      symbol: "ENSUSDT",
+      entry: 24.449, tp: 24.71, sl: 24.21,
+      date: "2025-09-14",
+      outcome: "win",
+      proof: "|"
+    },
+    {
+      id: "REC-065",
+      title: "AUCTION Long",
+      symbol: "AUCTIONUSDT",
+      entry: 9.833, tp: 10, sl: 9.708,
+      date: "2025-09-15",
+      outcome: "loss",
+      proof: "|"
+    },
+    {
+      id: "REC-066",
+      title: "FET Short",
+      symbol: "FETUSDT",
+      entry: 0.6638, tp: 0.6515, sl: 0.6685,
+      date: "2025-09-15",
+      outcome: "win",
+      proof: "|"
+    },
+    {
+      id: "REC-067",
+      title: "ENS Short",
+      symbol: "ENSUSDT",
+      entry: 24.073, tp: 23.598, sl: 24.237,
+      date: "2025-09-15",
+      outcome: "win",
+      proof: "|"
+    },
+    {
+      id: "REC-068",
+      title: "SOL Long",
+      symbol: "SOLUSDT",
+      entry: 235.8, tp: 242, sl: 228,
+      date: "2025-09-16",
+      outcome: "breakeven",
+      proof: "|"
+    },
+    ,
+    {
+      id: "REC-068",
+      title: "LINK Long",
+      symbol: "LINKUSDT",
+      entry: 23.446, tp: 23.681, sl: 22.93,
+      date: "2025-09-16",
+      outcome: "win",
+      proof: "|"
     },
   ];
 
