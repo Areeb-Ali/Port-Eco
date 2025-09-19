@@ -633,7 +633,7 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 24.449, tp: 24.71, sl: 24.21,
       date: "2025-09-14",
       outcome: "win",
-      proof: "|"
+      proof: "https://x.com/areebithink/status/1966957158274101606"
     },
     {
       id: "REC-065",
@@ -642,7 +642,7 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 9.833, tp: 10, sl: 9.708,
       date: "2025-09-15",
       outcome: "loss",
-      proof: "|"
+      proof: "https://x.com/areebithink/status/1966957158274101606"
     },
     {
       id: "REC-066",
@@ -651,7 +651,7 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 0.6638, tp: 0.6515, sl: 0.6685,
       date: "2025-09-15",
       outcome: "win",
-      proof: "|"
+      proof: "https://x.com/areebithink/status/1967434393133384135"
     },
     {
       id: "REC-067",
@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 24.073, tp: 23.598, sl: 24.237,
       date: "2025-09-15",
       outcome: "win",
-      proof: "|"
+      proof: "https://x.com/areebithink/status/1967434393133384135"
     },
     {
       id: "REC-068",
@@ -669,9 +669,8 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 235.8, tp: 242, sl: 228,
       date: "2025-09-16",
       outcome: "breakeven",
-      proof: "|"
+      proof: "https://x.com/areebithink/status/1967508614538817589"
     },
-    ,
     {
       id: "REC-068",
       title: "LINK Long",
@@ -679,7 +678,106 @@ document.addEventListener('DOMContentLoaded', function () {
       entry: 23.446, tp: 23.681, sl: 22.93,
       date: "2025-09-16",
       outcome: "win",
-      proof: "|"
+      proof: "https://x.com/areebithink/status/1967508614538817589"
+    },
+    {
+      id: "REC-069",
+      title: "XRP Long",
+      symbol: "XRPUSDT",
+      entry: 3.01, tp: 3.046, sl: 3,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1967984965242720551"
+    },
+    {
+      id: "REC-070",
+      title: "ADA Long",
+      symbol: "ADAUSDT",
+      entry: 0.86, tp: 0.8762, sl: 0.8559,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1967984965242720551"
+    },
+    {
+      id: "REC-071",
+      title: "BEAMX Long",
+      symbol: "BEAMXUSDT",
+      entry: 0.007464, tp: 0.007543, sl: 0.007428,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1967984965242720551"
+    },
+    {
+      id: "REC-072",
+      title: "SUI Short",
+      symbol: "SUIUSDT",
+      entry: 3.6144, tp: 3.5616, sl: 3.6521,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "#"
+    },
+    {
+      id: "REC-073",
+      title: "BTC Short",
+      symbol: "BTCUSDT",
+      entry: 117116.4, tp: 115579.4, sl: 117200,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "#"
+    },
+    {
+      id: "REC-074",
+      title: "FET Long",
+      symbol: "FETUSDT",
+      entry: 0.6319, tp: 0.6401, sl: 0.6299,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1968324220687208880"
+    },
+    {
+      id: "REC-075",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 115485.3, tp: 117500, sl: 115121,
+      date: "2025-09-17",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1968324220687208880"
+    },
+    {
+      id: "REC-076",
+      title: "LINK Long",
+      symbol: "LINKUSDT",
+      entry: 22.848, tp: 22.933, sl: 22.5,
+      date: "2025-09-17",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1968324220687208880"
+    },
+    {
+      id: "REC-077",
+      title: "BTC Short",
+      symbol: "BTCUSDT",
+      entry: 117530, tp: 116562, sl: 117662,
+      date: "2025-09-19",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1968707915373576221"
+    },
+    {
+      id: "REC-078",
+      title: "ENS Short",
+      symbol: "ENSUSDT",
+      entry: 24.342, tp: 24.07, sl: 24.622,
+      date: "2025-09-19",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1968707915373576221"
+    },
+    {
+      id: "REC-078",
+      title: "ADA Short",
+      symbol: "ADAUSDT",
+      entry: 0.927, tp: 0.8956, sl: 0.9296,
+      date: "2025-09-19",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1968707915373576221"
     },
   ];
 
