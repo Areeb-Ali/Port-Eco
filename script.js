@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    // {
-    //   id: "RUN-001", title: "XRPUSDT Short",
-    //   symbol: "XRPUSDT",
-    //   entry: 3.067, tp: 3.0173, sl: 0,
-    //   date: "2025-09-12", outcome: "running",
-    //   proof: "https://x.com/areebithink/status/1966384149473759691"
-    // },
+    {
+      id: "RUN-001", title: "SOLUSDT Long",
+      symbol: "SOLUSDT",
+      entry: 241, tp: 255, sl: 240,
+      date: "2025-09-19", outcome: "running",
+      proof: "https://x.com/areebithink/status/1969036713155518589"
+    },
     // {
     //   id: "RUN-002", title: "ETHUSDT Short",
     //   symbol: "ETHUSDT",
