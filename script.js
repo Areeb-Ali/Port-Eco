@@ -1131,7 +1131,35 @@ const blogPosts = [
     description: 'A significant miss like this signals a slowing job market, which increases the likelihood of a more dovish stance from the Fed.',
     link: 'https://x.com/areebithink/status/1963962226458382683',
     date: '2025-09-05'
-  }
+  },
+  {
+    id: '013',
+    title: 'Why Iam still long after the dump',
+    description: 'Rate cuts are on the table, and thats a short-term bullish signal for crypto.',
+    link: 'https://x.com/areebithink/status/1965485662288969856',
+    date: '2025-09-09'
+  },
+  {
+    id: '014',
+    title: 'The Reason of sudden market dump',
+    description: 'Israel which was an unrecognised country, attacked on many countries, including Qatar',
+    link: 'https://x.com/areebithink/status/1965483938232893797',
+    date: '2025-09-09'
+  },
+  {
+    id: '015',
+    title: 'My Expectations for Tomorrow FOMC Meeting',
+    description: 'What Traders Need to Know',
+    link: 'https://lnkd.in/p/d_kJUG4P',
+    date: '2025-09-16'
+  },
+  {
+    id: '016',
+    title: 'After FOMC Meeting Expectations ',
+    description: 'The Prediction vs. Reality:',
+    link: 'https://lnkd.in/p/dSwjgnTb',
+    date: '2025-09-19'
+  },
 ];
 
 function createBlogPostCard(post) {
