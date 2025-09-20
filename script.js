@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== Sample Trades =====
   const runningTrades = [
-    {
-      id: "RUN-001", title: "SOLUSDT Long",
-      symbol: "SOLUSDT",
-      entry: 241, tp: 255, sl: 240,
-      date: "2025-09-19", outcome: "running",
-      proof: "https://x.com/areebithink/status/1969036713155518589"
-    },
+    // {
+    //   id: "RUN-001", title: "SOLUSDT Long",
+    //   symbol: "SOLUSDT",
+    //   entry: 239., tp: 241, sl: 0,
+    //   date: "2025-09-20", outcome: "running",
+    //   proof: "https://x.com/areebithink/status/1969036713155518589"
+    // },
     // {
     //   id: "RUN-002", title: "ETHUSDT Short",
     //   symbol: "ETHUSDT",
@@ -771,13 +771,23 @@ document.addEventListener('DOMContentLoaded', function () {
       proof: "https://x.com/areebithink/status/1968707915373576221"
     },
     {
-      id: "REC-078",
+      id: "REC-079",
       title: "ADA Short",
       symbol: "ADAUSDT",
       entry: 0.927, tp: 0.8956, sl: 0.9296,
       date: "2025-09-19",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1968707915373576221"
+    },
+    ,
+    {
+      id: "REC-080",
+      title: "SOL Short",
+      symbol: "SOLUSDT",
+      entry: 239, tp: 241, sl: 0,
+      date: "2025-09-20",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1969036713155518589"
     },
   ];
 
