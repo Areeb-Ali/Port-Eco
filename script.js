@@ -782,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ,
     {
       id: "REC-080",
-      title: "SOL Short",
+      title: "SOL Long",
       symbol: "SOLUSDT",
       entry: 239, tp: 241, sl: 0,
       date: "2025-09-20",
