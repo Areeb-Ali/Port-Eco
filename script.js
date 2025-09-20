@@ -1361,25 +1361,58 @@ const weeklyReports = [
     ],
     conclusion: "Discipline and patience remain key."
   },
-  // {
-  //     dateRange: "September 21-30, 2025",
-  //     summary: {
-  //         totalTrades: 6,
-  //         winRate: "67%",
-  //         avgRR: 2.3,
-  //         netPnL: "+7%",
-  //         highlight: "The best performing setup was a BTC long breakout (+15%), which captured a significant move after the market consolidated."
-  //     },
-  //     performance: [
-  //         { category: "BTC/ETH", details: "Our setups on Bitcoin and Ethereum performed well this week, with two successful long positions on BTC. Both trades aligned with our strategy of waiting for retests on key support levels, which paid off in higher conviction entries." },
-  //         { category: "Altcoins", details: "This week's standout altcoin was SOL, which saw a strong breakout after consolidating for several weeks. The worst performer was AVAX, which failed to hold its support level and was a losing short trade." }
-  //     ],
-  //     outlook: [
-  //         { asset: "BTC", details: "Neutral/Bullish. We’ll be watching the $29,500 level as a potential breakout point." },
-  //         { asset: "ETH", details: "We're watching the $1,900 level closely." }
-  //     ],
-  //     conclusion: "Discipline and patience remain key."
-  // },
+  {
+    dateRange: "September 14–20, 2025",
+    summary: {
+      totalTrades: 17,
+      winRate: "88%",
+      avgRR: 4.26,
+      netPnL: "+13%",
+      highlight: "The strongest performance this week was recorded on BTC, with a well-timed short on Sept 19 delivering a strong profit. ENS also stood out, delivering consistent wins across both long and short setups."
+    },
+    performance: [
+      {
+        category: "BTC",
+        details: "Bitcoin was actively traded this week with mixed results. The Sept 17 short trade achieved its target efficiently, while the Sept 17 long attempt closed at a loss, underscoring the challenge of trading countertrend setups. The Sept 19 short was the strongest BTC trade, capturing a decisive move lower. Overall, BTC performance reflected the importance of aligning with prevailing momentum."
+      },
+      {
+        category: "ETH",
+        details: "Ethereum was relatively quiet this week with no active trades executed. While market structure remains constructive, ETH underperformed compared to other main caps in terms of realized trading opportunities."
+      },
+      {
+        category: "SOL",
+        details: "Solana trades showed resilience. The Sept 16 long closed breakeven after muted follow-through, but the Sept 20 short delivered a clean win, reinforcing the benefits of timing entries during volatility expansions."
+      },
+      {
+        category: "XRP",
+        details: "XRP provided steady performance. The Sept 17 long closed successfully, reflecting reliable momentum during the midweek recovery. While not outsized, XRP’s consistency contributed positively to results."
+      },
+      {
+        category: "ADA",
+        details: "Cardano delivered strong performance with two wins. The Sept 17 long hit its target efficiently, and the Sept 19 short captured downside momentum cleanly. ADA ranked as one of the stronger main cap contributors this week."
+      },
+      {
+        category: "Main Caps",
+        details: "Among main caps, ADA and BTC stood out as the strongest performers, delivering decisive results on both long and short sides. ETH was the weakest main cap, with no trades executed, limiting contribution this week."
+      },
+      {
+        category: "High Caps",
+        details: "High caps were heavily traded this week, particularly ENS and LINK. ENS delivered consistent wins across both long and short positions, showcasing adaptability. LINK trades closed successfully, reinforcing trend alignment. FET trades resulted in one win on both short and long setups, demonstrating flexibility. BEAMX and SUI added profitable trades as well. Overall, high caps provided the broadest base of winners."
+      },
+      {
+        category: "Mid Caps",
+        details: "Mid cap exposure was minimal this week, with limited execution. Contribution was therefore modest relative to main and high caps."
+      }
+    ],
+
+    outlook: [
+      { asset: "BTC", details: "Our bias for the coming week is neutral-to-bearish. A weekly close below $117,250 would confirm bearish momentum, with $114,200 as the primary downside target. Relief rallies toward $116,300 may present tactical short opportunities targeting $114,200. Conversely, a sustained break and weekly close above $117,250 would invalidate this outlook and shift bias toward a more bullish framework." },
+      { asset: "ETH", details: "Ethereum maintains a neutral-to-bearish stance. The asset may extend lower toward $4,100, though interim rallies toward $4,350 and $4,220 are expected and should be viewed as potential resistance zones. Unless these levels are reclaimed decisively, ETH remains vulnerable to downside continuation." },
+      { asset: "Note", details: "This report has been published by Beeralia on September 20, 2025 at 5:00 PM EST, ahead of the current weekly close. The outlook and levels discussed herein are based on market conditions observed at the time of publication. Should any of the identified breakout or breakdown levels be triggered prior to the weekly close, the report will be updated accordingly. In the absence of such developments, this outlook will remain valid and serve as the basis for the following week’s analysis." }
+    ],
+    conclusion: "The week demonstrated the benefits of disciplined trade selection, with high caps and main caps delivering balanced performance. Discipline and patience remain key as volatility provides both risk and opportunity."
+  },
+
   // {
   //     dateRange: "October 2–9, 2025",
   //     summary: {
