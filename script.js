@@ -1364,9 +1364,9 @@ const weeklyReports = [
   {
     dateRange: "September 14–20, 2025",
     summary: {
-      totalTrades: 17,
+      totalTrades: 18,
       winRate: "88%",
-      avgRR: 4.26,
+      avgRR: 3.95,
       netPnL: "+13%",
       highlight: "The strongest performance this week was recorded on BTC, with a well-timed short on Sept 19 delivering a strong profit. ENS also stood out, delivering consistent wins across both long and short setups."
     },
