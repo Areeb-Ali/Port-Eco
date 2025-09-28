@@ -779,7 +779,6 @@ document.addEventListener('DOMContentLoaded', function () {
       outcome: "win",
       proof: "https://x.com/areebithink/status/1968707915373576221"
     },
-    ,
     {
       id: "REC-080",
       title: "SOL Long",
@@ -788,6 +787,42 @@ document.addEventListener('DOMContentLoaded', function () {
       date: "2025-09-20",
       outcome: "win",
       proof: "https://x.com/areebithink/status/1969036713155518589"
+    },
+    {
+      id: "REC-081",
+      title: "FET Long",
+      symbol: "FETUSDT",
+      entry: 0.6016, tp: 0.65, sl: 0.5775,
+      date: "2025-09-22",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1969949747986452688"
+    },
+    {
+      id: "REC-082",
+      title: "BTC Long",
+      symbol: "BTCUSDT",
+      entry: 114330, tp: 116000, sl: 111684,
+      date: "2025-09-22",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1969949747986452688"
+    },
+    {
+      id: "REC-083",
+      title: "SOL Long",
+      symbol: "SOLUSDT",
+      entry: 225, tp: 241, sl: 204.15,
+      date: "2025-09-22",
+      outcome: "loss",
+      proof: "https://x.com/areebithink/status/1969949747986452688"
+    },
+    {
+      id: "REC-084",
+      title: "ETH Long",
+      symbol: "ETHUSDT",
+      entry: 3900, tp: 4027, sl: 3844.5,
+      date: "2025-09-26",
+      outcome: "win",
+      proof: "https://x.com/areebithink/status/1971515178635472965"
     },
   ];
 
