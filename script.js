@@ -1447,6 +1447,63 @@ const weeklyReports = [
     ],
     conclusion: "The week demonstrated the benefits of disciplined trade selection, with high caps and main caps delivering balanced performance. Discipline and patience remain key as volatility provides both risk and opportunity."
   },
+  {
+    dateRange: "September 21–27, 2025",
+    summary: {
+      totalTrades: 4,
+      winRate: "25%",
+      avgRR: 1.42,
+      netPnL: "-30%",
+      highlight: "This week was challenging, with three main cap longs (BTC, SOL, FET) stopped out. The ETH long on Sept 26 was the only win, showing relative strength in Ethereum compared to other majors. We use more margin on loss when thats why week on loss."
+    },
+    performance: [
+      {
+        category: "BTC",
+        details: "Bitcoin long on Sept 22 was stopped out as price failed to sustain above 114,500. This highlights the difficulty of countertrend entries when market momentum remains weak."
+      },
+      {
+        category: "ETH",
+        details: "Ethereum delivered the only win of the week. The Sept 26 long trade hit target cleanly, showing ETH’s relative strength and resilience compared to BTC and SOL. ETH stood out as the top performer."
+      },
+      {
+        category: "SOL",
+        details: "Solana long on Sept 22 failed to hold above 225 and was stopped at 204, closing at a loss. SOL struggled to build upward momentum in line with broader market weakness."
+      },
+      {
+        category: "FET",
+        details: "Fetch.AI long attempt on Sept 22 was unsuccessful, with the stop-loss triggered at 0.5775. This highlights weakness in high-cap AI tokens during the week."
+      },
+      {
+        category: "Main Caps",
+        details: "Main caps underperformed this week, with BTC and SOL both recording losses. ETH was the exception, delivering the only winning trade and demonstrating relative strength."
+      },
+      {
+        category: "High Caps",
+        details: "High cap exposure was limited to FET, which closed at a loss. No other high caps were actively traded this week."
+      },
+      {
+        category: "Mid Caps",
+        details: "No mid-cap trades were executed this week, keeping contribution flat."
+      }
+    ],
+
+    outlook: [
+      {
+        asset: "BTC",
+        details: "Our bias for the coming week is conditional on the $107,500 level. A sustained weekly close below $107,500 would confirm bearish continuation, opening the path toward $103,000 as the primary downside target. However, within the $107,500 – $103,000 zone, short-term relief pumps may occur due to compressed price action. If BTC holds above $107,500 into the close, bias shifts to bullish, favoring upside continuation."
+      },
+      {
+        asset: "ETH",
+        details: "Ethereum’s key pivot remains $3,890. A weekly close below $3,890 would confirm bearish pressure, targeting $3,690 as the primary downside level. However, ETH has shown resilience, and unless $3,890 is broken decisively, the broader outlook favors upside. Holding above $3,890 keeps the path open toward $4,300 and $4,800, with potential extension into all-time high territory if momentum sustains."
+      },
+      {
+        asset: "Note",
+        details: "This report has been published by Beeralia on September 28, 2025 at 7:00 AM EDT, ahead of the current weekly close. The outlook and levels discussed herein are based on market conditions observed at the time of publication. Should any of the identified breakout or breakdown levels be triggered prior to the weekly close, the report will be updated accordingly. In the absence of such developments, this outlook will remain valid and serve as the basis for the following week’s analysis."
+      }
+    ],
+    conclusion: "This week’s outlook highlights the importance of respecting critical levels. BTC and ETH remain at pivotal zones, with directional bias dependent on weekly closes. Flexibility, discipline, and risk management will remain key as markets approach inflection points."
+  },
+
 
   // {
   //     dateRange: "October 2–9, 2025",
